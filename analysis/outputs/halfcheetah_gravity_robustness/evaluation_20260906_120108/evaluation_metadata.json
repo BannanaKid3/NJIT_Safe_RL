@@ -1,0 +1,31 @@
+{
+  "episodes_per_policy_per_eval_sigma": 100,
+  "evaluation_seed_start": 2301,
+  "evaluation_seed_end": 2400,
+  "train_sigmas": [
+    0.5
+  ],
+  "eval_sigmas": [
+    0.0,
+    1.0,
+    2.0
+  ],
+  "rho": 0.001,
+  "training_seeds": [
+    5,
+    11,
+    17,
+    23
+  ],
+  "robust_runs": [
+    1,
+    6,
+    3,
+    4
+  ],
+  "nominal_included": true,
+  "gravity_distribution": "Normal(base_gravity_z, eval_sigma)",
+  "gravity_resampling": "every_step_before_simulation",
+  "cost_threshold": 0.1,
+  "actor_evaluation": "deterministic_mean_action"
+}

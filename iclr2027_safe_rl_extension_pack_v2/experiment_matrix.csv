@@ -1,0 +1,8 @@
+environment,method,train_environment,robust_critic,seed_1,seed_2,script,required_before_run
+Quadrotor,Combined,NP,no,2,5,code_ipm_rcmdp_rcrl_max_quadrotor_combined.py,setup_pipeline
+Quadrotor,Multi,P,yes,2,5,code_ipm_rcmdp_rcrl_max_quadrotor_multi_constraint_perturbed.py,explicit perturbed YAML selected
+Quadrotor,Combined,P,yes,2,5,code_ipm_rcmdp_rcrl_max_quadrotor_combined_robust.py,explicit perturbed YAML selected; optional after nominal analysis
+Swimmer,Multi,NP,no,2,5,code_ipm_rcmdp_rcrl_max_swimmer_multi_constraint.py,threshold calibration
+Swimmer,Combined,NP,no,2,5,code_ipm_rcmdp_rcrl_max_swimmer_combined.py,threshold calibration
+Swimmer,Multi,P,yes,2,5,code_ipm_rcmdp_rcrl_max_swimmer_multi_constraint_perturbed.py,threshold calibration
+Swimmer,Combined,P,yes,2,5,code_ipm_rcmdp_rcrl_max_swimmer_combined_perturbed.py,threshold calibration; optional ablation

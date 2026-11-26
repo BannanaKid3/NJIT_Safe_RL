@@ -1,0 +1,29 @@
+Plotting reference snapshot
+
+Shilpa upstream repository master inspected at:
+5c33f334a4811b17b9e9aceb837e6931ee509182
+2026-09-20 17:10:34 UTC
+
+Training formatting references:
+code_plot_train_multiple_hc.py
+code_plot_train_multiple_swimmer.py
+
+Inference formatting references:
+code_evaluate_ipm_rcmdp_rcrl_pert_hc_baseline_comparison.py
+code_evaluate_ipm_rcmdp_rcrl_pert_swimmer_baseline_comparison.py
+code_evaluate_ipm_rcmdp_rcrl_pert_quadrotor_multi_constraint.py
+
+Paper figure reference:
+Robust Peak-cost Constrained Reinforcement Learning, current shared PDF
+Fig. 5: HalfCheetah training Returns / Peak-Cost
+Fig. 6: HalfCheetah perturbed inference Returns / Peak-Cost
+
+Shared RP-CRL Discussions notes used:
+Multi-constraint adaptation: compare Surrogate Objective and RP-CRL.
+Ablation: combined cost.
+Quadrotor: perturbed vs non-perturbed training/inference and disturbance results.
+HalfCheetah: inference on perturbed gravity sigma 1.5.
+MuJoCo third environment: same comparison structure as HalfCheetah.
+
+Latest mentor priority used:
+Combined Cost vs Multi Constraint ablation first. Additional multi-constraint baselines are being run separately by Shilpa.

@@ -1,0 +1,5 @@
+method,training_seed,checkpoint,episodes,reward_mean,reward_sd,max_cost_mean,max_cost_sd,feasible_episode_fraction
+Multi Constraint,2,/home/bannanakid/RCRL_on_RCMDP/models/QuadrotorMultiPerturbedRobust/run9412/Best_RCAC_actor,100,74.91577242790225,34.89142623720029,4.286e-05,0.00042645161554389727,1.0
+Multi Constraint,5,/home/bannanakid/RCRL_on_RCMDP/models/QuadrotorMultiPerturbedRobust/run9415/Best_RCAC_actor,100,50.57945084009692,10.428930516009109,0.0,0.0,1.0
+Combined Cost,2,/home/bannanakid/RCRL_on_RCMDP/models/QuadrotorCombinedPerturbedRobust/run9512/Best_RCAC_actor,100,79.5768516037514,26.540945087281372,0.14815763000000004,0.0006629601293441413,1.0
+Combined Cost,5,/home/bannanakid/RCRL_on_RCMDP/models/QuadrotorCombinedPerturbedRobust/run9515/Best_RCAC_actor,100,81.38848152227355,5.590991300778937,0.279207,0.0,1.0

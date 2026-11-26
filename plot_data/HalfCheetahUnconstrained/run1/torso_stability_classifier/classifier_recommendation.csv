@@ -1,0 +1,2 @@
+model_name,model_family,probability_threshold,persistence_steps,persistence_seconds,cal_detection_rate,val_detection_rate,cal_step_fpr,val_step_fpr,cal_episode_far,val_episode_far,cal_auc,val_auc,cal_average_precision,val_average_precision,overall_pass
+tree_depth4_leaf40,decision_tree,0.7000000000000003,1,0.05,1.0,0.6666666666666666,0.0467006576516663,0.03167587476979742,0.8636363636363636,0.875,0.7493703713796201,0.4996175095622609,0.1569349248170896,0.013996840581685693,False

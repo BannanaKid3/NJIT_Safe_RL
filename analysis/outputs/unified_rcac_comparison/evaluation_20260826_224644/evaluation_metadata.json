@@ -1,0 +1,162 @@
+{
+  "created_at": "2026-08-26T22:58:05",
+  "repository_root": "/home/bannanakid/RCRL_on_RCMDP",
+  "output_directory": "/home/bannanakid/RCRL_on_RCMDP/analysis/outputs/unified_rcac_comparison/evaluation_20260826_224644",
+  "methods": [
+    "Shilpa action",
+    "Scalar combined",
+    "Multi-constraint"
+  ],
+  "training_seeds": [
+    5,
+    11,
+    17,
+    23
+  ],
+  "action_runs": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "scalar_runs": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "multi_runs": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "episodes_per_policy": 100,
+  "evaluation_seed_start": 2301,
+  "evaluation_seed_end": 2400,
+  "plot_episode": 1,
+  "plot_evaluation_seed": 2301,
+  "deterministic_mean_actions": true,
+  "persistent_epsilon": 0.1,
+  "action_torque_threshold": 0.5,
+  "pitch_threshold_rad": 1.5707963267948966,
+  "pitch_threshold_deg": 90.0,
+  "joint_names": [
+    "back_thigh",
+    "back_shin",
+    "back_foot",
+    "front_thigh",
+    "front_shin",
+    "front_foot"
+  ],
+  "joint_speed_thresholds": [
+    23.952442696579617,
+    21.273920780514413,
+    20.869860859139493,
+    27.172519265909983,
+    21.158679170546527,
+    16.234366386891228
+  ],
+  "activation": "relu",
+  "device": "cpu",
+  "bootstrap_samples": 20000,
+  "save_all_timesteps": false,
+  "policies": [
+    {
+      "method": "Shilpa action",
+      "training_objective": "action_cost",
+      "training_seed": 5,
+      "run": 10,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahWithPos/run10/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahWithPos/run10/training_metadata.json"
+    },
+    {
+      "method": "Scalar combined",
+      "training_objective": "combined_state_cost",
+      "training_seed": 5,
+      "run": 4,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run4/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run4/training_metadata.json"
+    },
+    {
+      "method": "Multi-constraint",
+      "training_objective": "separate_pitch_and_joint_costs",
+      "training_seed": 5,
+      "run": 4,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run4/Best_RCAC_actor_9400",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run4/training_metadata.json"
+    },
+    {
+      "method": "Shilpa action",
+      "training_objective": "action_cost",
+      "training_seed": 11,
+      "run": 11,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahWithPos/run11/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahWithPos/run11/training_metadata.json"
+    },
+    {
+      "method": "Scalar combined",
+      "training_objective": "combined_state_cost",
+      "training_seed": 11,
+      "run": 5,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run5/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run5/training_metadata.json"
+    },
+    {
+      "method": "Multi-constraint",
+      "training_objective": "separate_pitch_and_joint_costs",
+      "training_seed": 11,
+      "run": 5,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run5/Best_RCAC_actor_6900",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run5/training_metadata.json"
+    },
+    {
+      "method": "Shilpa action",
+      "training_objective": "action_cost",
+      "training_seed": 17,
+      "run": 12,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahWithPos/run12/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahWithPos/run12/training_metadata.json"
+    },
+    {
+      "method": "Scalar combined",
+      "training_objective": "combined_state_cost",
+      "training_seed": 17,
+      "run": 6,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run6/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run6/training_metadata.json"
+    },
+    {
+      "method": "Multi-constraint",
+      "training_objective": "separate_pitch_and_joint_costs",
+      "training_seed": 17,
+      "run": 6,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run6/Best_RCAC_actor_9900",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run6/training_metadata.json"
+    },
+    {
+      "method": "Shilpa action",
+      "training_objective": "action_cost",
+      "training_seed": 23,
+      "run": 13,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahWithPos/run13/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahWithPos/run13/training_metadata.json"
+    },
+    {
+      "method": "Scalar combined",
+      "training_objective": "combined_state_cost",
+      "training_seed": 23,
+      "run": 7,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run7/Best_RCAC_actor",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run7/training_metadata.json"
+    },
+    {
+      "method": "Multi-constraint",
+      "training_objective": "separate_pitch_and_joint_costs",
+      "training_seed": 23,
+      "run": 7,
+      "actor_path": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run7/Best_RCAC_actor_3900",
+      "metadata_path": "/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run7/training_metadata.json"
+    }
+  ]
+}

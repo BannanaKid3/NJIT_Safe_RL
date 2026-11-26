@@ -1,0 +1,47 @@
+Reference style
+shilpa2301/RCRL_on_RCMDP @ 5c33f334a4811b17b9e9aceb837e6931ee509182
+code_plot_train_multiple_hc.py
+code_plot_train_multiple_swimmer.py
+code_evaluate_ipm_rcmdp_rcrl_pert_hc_baseline_comparison.py
+Robust_RCRL_CDC_2026 figures 1, 2, 5, 6
+
+Training figures
+- full per-episode histories
+- mean and population SD across runs
+- 80-episode moving average
+- SD band
+- fixed current method palette
+- 36x28 training canvas
+- font size 100, axis label size 130, line width 15
+- no grid, thick spines, separate legends
+- reward and max-cost saved separately
+
+Inference figures
+- 100-episode result series
+- 20-episode moving average
+- 44x28 reward and 42x28 max-cost canvases
+- no grid, thick spines, separate legends
+
+Priority from Sep 20 mentor email
+1. Combined Cost vs Multi Constraint ablation
+2. Additional baseline comparison after baseline runs are available
+3. Inference/robustness comparisons
+
+Install from repo root
+unzip -o /path/to/multiconstraint_plot_suite.zip -d .
+
+Run
+bash multiconstraint_plot_suite/scripts/00_inventory.sh .
+bash multiconstraint_plot_suite/scripts/01_ablation.sh .
+bash multiconstraint_plot_suite/scripts/02_robustness.sh .
+
+All completed training plots
+bash multiconstraint_plot_suite/scripts/03_all_training_figures.sh .
+
+Outputs
+multiconstraint_figures/quadrotor/
+multiconstraint_figures/halfcheetah/
+multiconstraint_figures/swimmer/
+
+Inference input
+Each .npz needs arrays named rewards and max_costs. max_costs may be scalar or vector per episode. Use pack_inference.py when an evaluator already saved .npy arrays.

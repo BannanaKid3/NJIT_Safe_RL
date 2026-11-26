@@ -1,0 +1,5 @@
+method,training_seed,checkpoint,episodes,reward_mean,reward_sd,max_cost_mean,max_cost_sd,feasible_episode_fraction
+Multi Constraint,2,/home/bannanakid/RCRL_on_RCMDP/models/SwimmerMultiPerturbedRobust/run11812/Best_RCAC_actor_7900,100,1228.1375574478727,108.80937387894664,0.08902627866715193,0.015043771901988105,0.83
+Multi Constraint,5,/home/bannanakid/RCRL_on_RCMDP/models/SwimmerMultiPerturbedRobust/run11815/Best_RCAC_actor_8700,100,978.4261315214587,29.492928331502124,0.07902730993926525,0.01714019295316921,0.83
+Combined Cost,2,/home/bannanakid/RCRL_on_RCMDP/models/SwimmerCombinedPerturbedRobust/run11912/Best_RCAC_actor,100,816.0306836012692,5.941098053505794,0.08090928018093109,0.00037838439857009745,1.0
+Combined Cost,5,/home/bannanakid/RCRL_on_RCMDP/models/SwimmerCombinedPerturbedRobust/run11915/Best_RCAC_actor,100,859.7214812313769,21.656674477749817,0.06396232426166534,0.0023519798025634507,1.0

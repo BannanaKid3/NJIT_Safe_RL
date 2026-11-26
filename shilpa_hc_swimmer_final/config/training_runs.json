@@ -1,0 +1,24 @@
+{
+  "quadrotor": {
+    "threshold": 0.5,
+    "episodes": 10000,
+    "multi_np": ["plot_data/Quadrotor/run9212", "plot_data/Quadrotor/run9215"],
+    "combined_np": ["plot_data/QuadrotorCombined/run9312", "plot_data/QuadrotorCombined/run9315"],
+    "multi_pr": ["plot_data/QuadrotorMultiPerturbedRobust/run9412", "plot_data/QuadrotorMultiPerturbedRobust/run9415"],
+    "combined_pr": ["plot_data/QuadrotorCombinedPerturbedRobust/run9512", "plot_data/QuadrotorCombinedPerturbedRobust/run9515"]
+  },
+  "swimmer": {
+    "threshold": 0.1,
+    "episodes": 10000,
+    "multi_np": ["plot_data/SwimmerMulti/run11612", "plot_data/SwimmerMulti/run11615"],
+    "combined_np": ["plot_data/SwimmerCombined/run11712", "plot_data/SwimmerCombined/run11715"],
+    "multi_pr": ["plot_data/SwimmerMultiPerturbedRobust/run11812", "plot_data/SwimmerMultiPerturbedRobust/run11815"],
+    "combined_pr": ["plot_data/SwimmerCombinedPerturbedRobust/run11912", "plot_data/SwimmerCombinedPerturbedRobust/run11915"]
+  },
+  "halfcheetah": {
+    "threshold": 0.1,
+    "episodes": 10000,
+    "multi_namespace": "HalfCheetahMultiConstraintCost",
+    "combined_namespace": "HalfCheetahCombinedMaxCost"
+  }
+}

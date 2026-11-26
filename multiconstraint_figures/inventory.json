@@ -1,0 +1,1716 @@
+[
+  {
+    "namespace": "AntCost",
+    "run": "run1",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCost/run1"
+  },
+  {
+    "namespace": "AntCost",
+    "run": "run101",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCost/run101"
+  },
+  {
+    "namespace": "AntCost",
+    "run": "run102",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCost/run102"
+  },
+  {
+    "namespace": "AntCost",
+    "run": "run103",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCost/run103"
+  },
+  {
+    "namespace": "AntCost",
+    "run": "run104",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCost/run104"
+  },
+  {
+    "namespace": "AntCost",
+    "run": "run2",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCost/run2"
+  },
+  {
+    "namespace": "AntCostPerturbed",
+    "run": "run1",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCostPerturbed/run1"
+  },
+  {
+    "namespace": "AntCostPerturbed",
+    "run": "run2",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/AntCostPerturbed/run2"
+  },
+  {
+    "namespace": "CartPoleCostEnv",
+    "run": "run1",
+    "episodes": 3723,
+    "reward_shape": [
+      3723
+    ],
+    "max_cost_shape": [
+      3723
+    ],
+    "path": "plot_data/CartPoleCostEnv/run1"
+  },
+  {
+    "namespace": "CartPoleCostEnv",
+    "run": "run2",
+    "episodes": 3982,
+    "reward_shape": [
+      3982
+    ],
+    "max_cost_shape": [
+      3982
+    ],
+    "path": "plot_data/CartPoleCostEnv/run2"
+  },
+  {
+    "namespace": "CartPoleCostEnv",
+    "run": "run3",
+    "episodes": 3986,
+    "reward_shape": [
+      3986
+    ],
+    "max_cost_shape": [
+      3986
+    ],
+    "path": "plot_data/CartPoleCostEnv/run3"
+  },
+  {
+    "namespace": "CartPoleCostEnv",
+    "run": "run9",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/CartPoleCostEnv/run9"
+  },
+  {
+    "namespace": "CartPoleCostEnv_Cost2",
+    "run": "run1",
+    "episodes": 3772,
+    "reward_shape": [
+      3772
+    ],
+    "max_cost_shape": [
+      3772
+    ],
+    "path": "plot_data/CartPoleCostEnv_Cost2/run1"
+  },
+  {
+    "namespace": "CartPoleCostEnv_Cost3",
+    "run": "run1",
+    "episodes": 379,
+    "reward_shape": [
+      379
+    ],
+    "max_cost_shape": [
+      379
+    ],
+    "path": "plot_data/CartPoleCostEnv_Cost3/run1"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD",
+    "run": "run1",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD/run1"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD",
+    "run": "run2",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD/run2"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD",
+    "run": "run3",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD/run3"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RCRL",
+    "run": "run1",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RCRL/run1"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RCRL",
+    "run": "run2",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RCRL/run2"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RCRL",
+    "run": "run3",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RCRL/run3"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RCRL",
+    "run": "run7",
+    "episodes": 4000,
+    "reward_shape": [
+      4000
+    ],
+    "max_cost_shape": [
+      4000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RCRL/run7"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RCRL",
+    "run": "run7 copy",
+    "episodes": 4000,
+    "reward_shape": [
+      4000
+    ],
+    "max_cost_shape": [
+      4000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RCRL/run7 copy"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RCRL",
+    "run": "run8",
+    "episodes": 4000,
+    "reward_shape": [
+      4000
+    ],
+    "max_cost_shape": [
+      4000
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RCRL/run8"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RESPO",
+    "run": "run1",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RESPO/run1"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RESPO",
+    "run": "run2",
+    "episodes": 891,
+    "reward_shape": [
+      891
+    ],
+    "max_cost_shape": [
+      891
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RESPO/run2"
+  },
+  {
+    "namespace": "CartPoleCostEnv_PD_RESPO",
+    "run": "run3",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/CartPoleCostEnv_PD_RESPO/run3"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv",
+    "run": "run1",
+    "episodes": 3848,
+    "reward_shape": [
+      3848
+    ],
+    "max_cost_shape": [
+      3848
+    ],
+    "path": "plot_data/CartPolePerturbedEnv/run1"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv",
+    "run": "run17",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPolePerturbedEnv/run17"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv",
+    "run": "run19",
+    "episodes": 3824,
+    "reward_shape": [
+      3824
+    ],
+    "max_cost_shape": [
+      3824
+    ],
+    "path": "plot_data/CartPolePerturbedEnv/run19"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv",
+    "run": "run2",
+    "episodes": 3892,
+    "reward_shape": [
+      3892
+    ],
+    "max_cost_shape": [
+      3892
+    ],
+    "path": "plot_data/CartPolePerturbedEnv/run2"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv",
+    "run": "run21",
+    "episodes": 4657,
+    "reward_shape": [
+      4657
+    ],
+    "max_cost_shape": [
+      4657
+    ],
+    "path": "plot_data/CartPolePerturbedEnv/run21"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv",
+    "run": "run3",
+    "episodes": 3910,
+    "reward_shape": [
+      3910
+    ],
+    "max_cost_shape": [
+      3910
+    ],
+    "path": "plot_data/CartPolePerturbedEnv/run3"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv_Cost2",
+    "run": "run1",
+    "episodes": 5000,
+    "reward_shape": [
+      5000
+    ],
+    "max_cost_shape": [
+      5000
+    ],
+    "path": "plot_data/CartPolePerturbedEnv_Cost2/run1"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv_Cost3",
+    "run": "run1",
+    "episodes": 3822,
+    "reward_shape": [
+      3822
+    ],
+    "max_cost_shape": [
+      3822
+    ],
+    "path": "plot_data/CartPolePerturbedEnv_Cost3/run1"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv_Cost3",
+    "run": "run2",
+    "episodes": 3700,
+    "reward_shape": [
+      3700
+    ],
+    "max_cost_shape": [
+      3700
+    ],
+    "path": "plot_data/CartPolePerturbedEnv_Cost3/run2"
+  },
+  {
+    "namespace": "CartPolePerturbedEnv_Cost3",
+    "run": "run3",
+    "episodes": 4553,
+    "reward_shape": [
+      4553
+    ],
+    "max_cost_shape": [
+      4553
+    ],
+    "path": "plot_data/CartPolePerturbedEnv_Cost3/run3"
+  },
+  {
+    "namespace": "HalfCheetahCMDP",
+    "run": "run105",
+    "episodes": 253,
+    "reward_shape": [
+      253
+    ],
+    "max_cost_shape": [
+      253
+    ],
+    "path": "plot_data/HalfCheetahCMDP/run105"
+  },
+  {
+    "namespace": "HalfCheetahJointSpeedCost",
+    "run": "run1",
+    "episodes": 1976,
+    "reward_shape": [
+      1976
+    ],
+    "max_cost_shape": [
+      1976
+    ],
+    "path": "plot_data/HalfCheetahJointSpeedCost/run1"
+  },
+  {
+    "namespace": "HalfCheetahPitchCost",
+    "run": "run1_old_p99",
+    "episodes": 1976,
+    "reward_shape": [
+      1976
+    ],
+    "max_cost_shape": [
+      1976
+    ],
+    "path": "plot_data/HalfCheetahPitchCost/run1_old_p99"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run1",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run1"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run10",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run10"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run101",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run101"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run102",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run102"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run103",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run103"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run104",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run104"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run11",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run11"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run12",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run12"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run13",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run13"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run2",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run2"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run201",
+    "episodes": 4,
+    "reward_shape": [
+      4
+    ],
+    "max_cost_shape": [
+      4
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run201"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run203",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run203"
+  },
+  {
+    "namespace": "HalfCheetahWithPos",
+    "run": "run3",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPos/run3"
+  },
+  {
+    "namespace": "HalfCheetahWithPosPerturbed",
+    "run": "run1",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPosPerturbed/run1"
+  },
+  {
+    "namespace": "HalfCheetahWithPosPerturbed",
+    "run": "run2",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/HalfCheetahWithPosPerturbed/run2"
+  },
+  {
+    "namespace": "HopperCostEnv",
+    "run": "run1",
+    "episodes": 7442,
+    "reward_shape": [
+      7442
+    ],
+    "max_cost_shape": [
+      7442
+    ],
+    "path": "plot_data/HopperCostEnv/run1"
+  },
+  {
+    "namespace": "HopperCostEnv",
+    "run": "run2",
+    "episodes": 6643,
+    "reward_shape": [
+      6643
+    ],
+    "max_cost_shape": [
+      6643
+    ],
+    "path": "plot_data/HopperCostEnv/run2"
+  },
+  {
+    "namespace": "HopperPerturbedEnv",
+    "run": "run1",
+    "episodes": 6541,
+    "reward_shape": [
+      6541
+    ],
+    "max_cost_shape": [
+      6541
+    ],
+    "path": "plot_data/HopperPerturbedEnv/run1"
+  },
+  {
+    "namespace": "HopperPerturbedEnv",
+    "run": "run2",
+    "episodes": 6549,
+    "reward_shape": [
+      6549
+    ],
+    "max_cost_shape": [
+      6549
+    ],
+    "path": "plot_data/HopperPerturbedEnv/run2"
+  },
+  {
+    "namespace": "HumanoidWithCost",
+    "run": "run1",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/HumanoidWithCost/run1"
+  },
+  {
+    "namespace": "HumanoidWithCost",
+    "run": "run101",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/HumanoidWithCost/run101"
+  },
+  {
+    "namespace": "HumanoidWithCost",
+    "run": "run102",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/HumanoidWithCost/run102"
+  },
+  {
+    "namespace": "HumanoidWithCost",
+    "run": "run103",
+    "episodes": 4001,
+    "reward_shape": [
+      4001
+    ],
+    "max_cost_shape": [
+      4001
+    ],
+    "path": "plot_data/HumanoidWithCost/run103"
+  },
+  {
+    "namespace": "HumanoidWithCost",
+    "run": "run104",
+    "episodes": 4009,
+    "reward_shape": [
+      4009
+    ],
+    "max_cost_shape": [
+      4009
+    ],
+    "path": "plot_data/HumanoidWithCost/run104"
+  },
+  {
+    "namespace": "HumanoidWithCost",
+    "run": "run2",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/HumanoidWithCost/run2"
+  },
+  {
+    "namespace": "HumanoidWithCostPerturbed",
+    "run": "run1",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/HumanoidWithCostPerturbed/run1"
+  },
+  {
+    "namespace": "HumanoidWithCostPerturbed",
+    "run": "run2",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000
+    ],
+    "path": "plot_data/HumanoidWithCostPerturbed/run2"
+  },
+  {
+    "namespace": "PD_SwimmerWithPos",
+    "run": "run1",
+    "episodes": 4245,
+    "reward_shape": [
+      4245
+    ],
+    "max_cost_shape": [
+      4245
+    ],
+    "path": "plot_data/PD_SwimmerWithPos/run1"
+  },
+  {
+    "namespace": "PD_SwimmerWithPos",
+    "run": "run2",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/PD_SwimmerWithPos/run2"
+  },
+  {
+    "namespace": "PD_SwimmerWithPos",
+    "run": "run3",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/PD_SwimmerWithPos/run3"
+  },
+  {
+    "namespace": "PD_SwimmerWithPos",
+    "run": "run5",
+    "episodes": 2,
+    "reward_shape": [
+      2
+    ],
+    "max_cost_shape": [
+      2
+    ],
+    "path": "plot_data/PD_SwimmerWithPos/run5"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run1",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/PendulumCostEnv/run1"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run10",
+    "episodes": 5453,
+    "reward_shape": [
+      5453
+    ],
+    "max_cost_shape": [
+      5453
+    ],
+    "path": "plot_data/PendulumCostEnv/run10"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run11",
+    "episodes": 8000,
+    "reward_shape": [
+      8000
+    ],
+    "max_cost_shape": [
+      8000
+    ],
+    "path": "plot_data/PendulumCostEnv/run11"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run12",
+    "episodes": 3829,
+    "reward_shape": [
+      3829
+    ],
+    "max_cost_shape": [
+      3829
+    ],
+    "path": "plot_data/PendulumCostEnv/run12"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run13",
+    "episodes": 8000,
+    "reward_shape": [
+      8000
+    ],
+    "max_cost_shape": [
+      8000
+    ],
+    "path": "plot_data/PendulumCostEnv/run13"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run14",
+    "episodes": 8000,
+    "reward_shape": [
+      8000
+    ],
+    "max_cost_shape": [
+      8000
+    ],
+    "path": "plot_data/PendulumCostEnv/run14"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run2",
+    "episodes": 6068,
+    "reward_shape": [
+      6068
+    ],
+    "max_cost_shape": [
+      6068
+    ],
+    "path": "plot_data/PendulumCostEnv/run2"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run3",
+    "episodes": 5017,
+    "reward_shape": [
+      5017
+    ],
+    "max_cost_shape": [
+      5017
+    ],
+    "path": "plot_data/PendulumCostEnv/run3"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run4",
+    "episodes": 8000,
+    "reward_shape": [
+      8000
+    ],
+    "max_cost_shape": [
+      8000
+    ],
+    "path": "plot_data/PendulumCostEnv/run4"
+  },
+  {
+    "namespace": "PendulumCostEnv",
+    "run": "run5",
+    "episodes": 7426,
+    "reward_shape": [
+      7426
+    ],
+    "max_cost_shape": [
+      7426
+    ],
+    "path": "plot_data/PendulumCostEnv/run5"
+  },
+  {
+    "namespace": "PendulumEnv",
+    "run": "run1",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/PendulumEnv/run1"
+  },
+  {
+    "namespace": "PendulumEnv",
+    "run": "run5",
+    "episodes": 501,
+    "reward_shape": [
+      501
+    ],
+    "max_cost_shape": [
+      501
+    ],
+    "path": "plot_data/PendulumEnv/run5"
+  },
+  {
+    "namespace": "PendulumEnv_PD",
+    "run": "run1",
+    "episodes": 2221,
+    "reward_shape": [
+      2221
+    ],
+    "max_cost_shape": [
+      2221
+    ],
+    "path": "plot_data/PendulumEnv_PD/run1"
+  },
+  {
+    "namespace": "PendulumEnv_PD",
+    "run": "run2",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/PendulumEnv_PD/run2"
+  },
+  {
+    "namespace": "PendulumPerturbedEnv",
+    "run": "run1",
+    "episodes": 4500,
+    "reward_shape": [
+      4500
+    ],
+    "max_cost_shape": [
+      4500
+    ],
+    "path": "plot_data/PendulumPerturbedEnv/run1"
+  },
+  {
+    "namespace": "PusherWithCost",
+    "run": "run1",
+    "episodes": 8000,
+    "reward_shape": [
+      8000
+    ],
+    "max_cost_shape": [
+      8000
+    ],
+    "path": "plot_data/PusherWithCost/run1"
+  },
+  {
+    "namespace": "PusherWithCostPerturbed",
+    "run": "run1",
+    "episodes": 8000,
+    "reward_shape": [
+      8000
+    ],
+    "max_cost_shape": [
+      8000
+    ],
+    "path": "plot_data/PusherWithCostPerturbed/run1"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run100",
+    "episodes": 17,
+    "reward_shape": [
+      17
+    ],
+    "max_cost_shape": [
+      17,
+      4
+    ],
+    "path": "plot_data/Quadrotor/run100"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run18",
+    "episodes": 20000,
+    "reward_shape": [
+      20000
+    ],
+    "max_cost_shape": [
+      20000,
+      4
+    ],
+    "path": "plot_data/Quadrotor/run18"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run19",
+    "episodes": 1637,
+    "reward_shape": [
+      1637
+    ],
+    "max_cost_shape": [
+      1637,
+      2
+    ],
+    "path": "plot_data/Quadrotor/run19"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run211",
+    "episodes": 344,
+    "reward_shape": [
+      344
+    ],
+    "max_cost_shape": [
+      344,
+      4
+    ],
+    "path": "plot_data/Quadrotor/run211"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run215",
+    "episodes": 304,
+    "reward_shape": [
+      304
+    ],
+    "max_cost_shape": [
+      304,
+      4
+    ],
+    "path": "plot_data/Quadrotor/run215"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run9212",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      4
+    ],
+    "path": "plot_data/Quadrotor/run9212"
+  },
+  {
+    "namespace": "Quadrotor",
+    "run": "run9215",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      4
+    ],
+    "path": "plot_data/Quadrotor/run9215"
+  },
+  {
+    "namespace": "QuadrotorCombined",
+    "run": "run9312",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/QuadrotorCombined/run9312"
+  },
+  {
+    "namespace": "QuadrotorCombined",
+    "run": "run9315",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/QuadrotorCombined/run9315"
+  },
+  {
+    "namespace": "QuadrotorCombinedPerturbedRobust",
+    "run": "run9512",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/QuadrotorCombinedPerturbedRobust/run9512"
+  },
+  {
+    "namespace": "QuadrotorCombinedPerturbedRobust",
+    "run": "run9515",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/QuadrotorCombinedPerturbedRobust/run9515"
+  },
+  {
+    "namespace": "QuadrotorMultiPerturbedRobust",
+    "run": "run9412",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      4
+    ],
+    "path": "plot_data/QuadrotorMultiPerturbedRobust/run9412"
+  },
+  {
+    "namespace": "QuadrotorMultiPerturbedRobust",
+    "run": "run9415",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      4
+    ],
+    "path": "plot_data/QuadrotorMultiPerturbedRobust/run9415"
+  },
+  {
+    "namespace": "ReacherWithCost",
+    "run": "run1",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/ReacherWithCost/run1"
+  },
+  {
+    "namespace": "ReacherWithCost",
+    "run": "run2",
+    "episodes": 1,
+    "reward_shape": [
+      1
+    ],
+    "max_cost_shape": [
+      1
+    ],
+    "path": "plot_data/ReacherWithCost/run2"
+  },
+  {
+    "namespace": "ReacherWithCostPerturbed",
+    "run": "run1",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/ReacherWithCostPerturbed/run1"
+  },
+  {
+    "namespace": "ReacherWithCostPerturbed",
+    "run": "run2",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/ReacherWithCostPerturbed/run2"
+  },
+  {
+    "namespace": "SkydioTrackingEnv",
+    "run": "run1",
+    "episodes": 2924,
+    "reward_shape": [
+      2924
+    ],
+    "max_cost_shape": [
+      2924
+    ],
+    "path": "plot_data/SkydioTrackingEnv/run1"
+  },
+  {
+    "namespace": "SkydioTrackingMultiConstraintEnv",
+    "run": "run1",
+    "episodes": 4797,
+    "reward_shape": [
+      4797
+    ],
+    "max_cost_shape": [
+      4797,
+      8
+    ],
+    "path": "plot_data/SkydioTrackingMultiConstraintEnv/run1"
+  },
+  {
+    "namespace": "SkydioTrackingMultiConstraintEnv",
+    "run": "run2",
+    "episodes": 6000,
+    "reward_shape": [
+      6000
+    ],
+    "max_cost_shape": [
+      6000,
+      8
+    ],
+    "path": "plot_data/SkydioTrackingMultiConstraintEnv/run2"
+  },
+  {
+    "namespace": "SkydioTrackingMultiConstraintEnv",
+    "run": "run3",
+    "episodes": 3930,
+    "reward_shape": [
+      3930
+    ],
+    "max_cost_shape": [
+      3930,
+      8
+    ],
+    "path": "plot_data/SkydioTrackingMultiConstraintEnv/run3"
+  },
+  {
+    "namespace": "SwimmerCombined",
+    "run": "run11712",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/SwimmerCombined/run11712"
+  },
+  {
+    "namespace": "SwimmerCombined",
+    "run": "run11715",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/SwimmerCombined/run11715"
+  },
+  {
+    "namespace": "SwimmerCombinedPerturbedRobust",
+    "run": "run11912",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/SwimmerCombinedPerturbedRobust/run11912"
+  },
+  {
+    "namespace": "SwimmerCombinedPerturbedRobust",
+    "run": "run11915",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000
+    ],
+    "path": "plot_data/SwimmerCombinedPerturbedRobust/run11915"
+  },
+  {
+    "namespace": "SwimmerMulti",
+    "run": "run11612",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      2
+    ],
+    "path": "plot_data/SwimmerMulti/run11612"
+  },
+  {
+    "namespace": "SwimmerMulti",
+    "run": "run11615",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      2
+    ],
+    "path": "plot_data/SwimmerMulti/run11615"
+  },
+  {
+    "namespace": "SwimmerMultiPerturbedRobust",
+    "run": "run11812",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      2
+    ],
+    "path": "plot_data/SwimmerMultiPerturbedRobust/run11812"
+  },
+  {
+    "namespace": "SwimmerMultiPerturbedRobust",
+    "run": "run11815",
+    "episodes": 10000,
+    "reward_shape": [
+      10000
+    ],
+    "max_cost_shape": [
+      10000,
+      2
+    ],
+    "path": "plot_data/SwimmerMultiPerturbedRobust/run11815"
+  },
+  {
+    "namespace": "SwimmerWithPos",
+    "run": "run1",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/SwimmerWithPos/run1"
+  },
+  {
+    "namespace": "SwimmerWithPos",
+    "run": "run2",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/SwimmerWithPos/run2"
+  },
+  {
+    "namespace": "SwimmerWithPosPerturbed",
+    "run": "run1",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/SwimmerWithPosPerturbed/run1"
+  },
+  {
+    "namespace": "SwimmerWithPosPerturbed",
+    "run": "run2",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/SwimmerWithPosPerturbed/run2"
+  },
+  {
+    "namespace": "Walker2dWithCost",
+    "run": "run1",
+    "episodes": 1392,
+    "reward_shape": [
+      1392
+    ],
+    "max_cost_shape": [
+      1392
+    ],
+    "path": "plot_data/Walker2dWithCost/run1"
+  },
+  {
+    "namespace": "Walker2dWithCost",
+    "run": "run2",
+    "episodes": 2452,
+    "reward_shape": [
+      2452
+    ],
+    "max_cost_shape": [
+      2452
+    ],
+    "path": "plot_data/Walker2dWithCost/run2"
+  },
+  {
+    "namespace": "Walker2dWithCost",
+    "run": "run3",
+    "episodes": 2024,
+    "reward_shape": [
+      2024
+    ],
+    "max_cost_shape": [
+      2024
+    ],
+    "path": "plot_data/Walker2dWithCost/run3"
+  },
+  {
+    "namespace": "Walker2dWithCost",
+    "run": "run4",
+    "episodes": 2889,
+    "reward_shape": [
+      2889
+    ],
+    "max_cost_shape": [
+      2889
+    ],
+    "path": "plot_data/Walker2dWithCost/run4"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run1",
+    "episodes": 1438,
+    "reward_shape": [
+      1438
+    ],
+    "max_cost_shape": [
+      1438
+    ],
+    "path": "plot_data/quadrotor/run1"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run10",
+    "episodes": 3000,
+    "reward_shape": [
+      3000
+    ],
+    "max_cost_shape": [
+      3000
+    ],
+    "path": "plot_data/quadrotor/run10"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run11",
+    "episodes": 30000,
+    "reward_shape": [
+      30000
+    ],
+    "max_cost_shape": [
+      30000
+    ],
+    "path": "plot_data/quadrotor/run11"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run12",
+    "episodes": 42000,
+    "reward_shape": [
+      42000
+    ],
+    "max_cost_shape": [
+      42000
+    ],
+    "path": "plot_data/quadrotor/run12"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run13",
+    "episodes": 8386,
+    "reward_shape": [
+      8386
+    ],
+    "max_cost_shape": [
+      8386,
+      4
+    ],
+    "path": "plot_data/quadrotor/run13"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run14",
+    "episodes": 30000,
+    "reward_shape": [
+      30000
+    ],
+    "max_cost_shape": [
+      30000,
+      4
+    ],
+    "path": "plot_data/quadrotor/run14"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run15",
+    "episodes": 33076,
+    "reward_shape": [
+      33076
+    ],
+    "max_cost_shape": [
+      33076,
+      4
+    ],
+    "path": "plot_data/quadrotor/run15"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run16",
+    "episodes": 40000,
+    "reward_shape": [
+      40000
+    ],
+    "max_cost_shape": [
+      40000,
+      4
+    ],
+    "path": "plot_data/quadrotor/run16"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run17",
+    "episodes": 37300,
+    "reward_shape": [
+      37300
+    ],
+    "max_cost_shape": [
+      37300,
+      4
+    ],
+    "path": "plot_data/quadrotor/run17"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run2",
+    "episodes": 33,
+    "reward_shape": [
+      33
+    ],
+    "max_cost_shape": [
+      33
+    ],
+    "path": "plot_data/quadrotor/run2"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run3",
+    "episodes": 2000,
+    "reward_shape": [
+      2000
+    ],
+    "max_cost_shape": [
+      2000
+    ],
+    "path": "plot_data/quadrotor/run3"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run4",
+    "episodes": 2845,
+    "reward_shape": [
+      2845
+    ],
+    "max_cost_shape": [
+      2845,
+      2
+    ],
+    "path": "plot_data/quadrotor/run4"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run5",
+    "episodes": 2773,
+    "reward_shape": [
+      2773
+    ],
+    "max_cost_shape": [
+      2773
+    ],
+    "path": "plot_data/quadrotor/run5"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run6",
+    "episodes": 16000,
+    "reward_shape": [
+      16000
+    ],
+    "max_cost_shape": [
+      16000
+    ],
+    "path": "plot_data/quadrotor/run6"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run7",
+    "episodes": 5300,
+    "reward_shape": [
+      5300
+    ],
+    "max_cost_shape": [
+      5300
+    ],
+    "path": "plot_data/quadrotor/run7"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run8",
+    "episodes": 50000,
+    "reward_shape": [
+      50000
+    ],
+    "max_cost_shape": [
+      50000
+    ],
+    "path": "plot_data/quadrotor/run8"
+  },
+  {
+    "namespace": "quadrotor",
+    "run": "run9",
+    "episodes": 30000,
+    "reward_shape": [
+      30000
+    ],
+    "max_cost_shape": [
+      30000
+    ],
+    "path": "plot_data/quadrotor/run9"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "environment": "Quadrotor",
+  "profile": "nominal",
+  "profile_file": "/home/bannanakid/RCRL_on_RCMDP/multiconstraint_paper_suite/evaluation/profiles/quadrotor/nominal.yaml",
+  "cost_scale": 100.0,
+  "episodes_per_training_seed": 100,
+  "evaluation_seed_start": 2301,
+  "evaluation_seed_end": 2400,
+  "actor_evaluation": "deterministic_mean_action",
+  "smoothing": "moving average window 20",
+  "methods": {
+    "Multi Constraint": [
+      {
+        "training_seed": 2,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/Quadrotor/run9212/Best_RCAC_actor_1100"
+      },
+      {
+        "training_seed": 5,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/Quadrotor/run9215/Best_RCAC_actor_7700"
+      }
+    ],
+    "Combined Cost": [
+      {
+        "training_seed": 2,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/QuadrotorCombined/run9312/Best_RCAC_actor"
+      },
+      {
+        "training_seed": 5,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/QuadrotorCombined/run9315/Best_RCAC_actor"
+      }
+    ]
+  }
+}

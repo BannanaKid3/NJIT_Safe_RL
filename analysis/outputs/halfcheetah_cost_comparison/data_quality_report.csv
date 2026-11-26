@@ -1,0 +1,43 @@
+path,status,detail
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahPitchCost/wrapped_inversion_90deg_v3/run1/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahPitchCost/wrapped_inversion_90deg_v3/run1/evaluate_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahPitchCost/wrapped_inversion_90deg_v3/run1/evaluate_max_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahPitchCost/wrapped_inversion_90deg_v3/run1/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahPitchCost/wrapped_inversion_90deg_v3/run1/evaluate_component_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahPitchCost/wrapped_inversion_90deg_v3/run1/evaluate_component_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahJointSpeedCost/behavior_inversion_15step_v2/run1/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahJointSpeedCost/behavior_inversion_15step_v2/run1/evaluate_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahJointSpeedCost/behavior_inversion_15step_v2/run1/evaluate_max_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahJointSpeedCost/behavior_inversion_15step_v2/run1/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahJointSpeedCost/behavior_inversion_15step_v2/run1/evaluate_component_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahJointSpeedCost/behavior_inversion_15step_v2/run1/evaluate_component_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run1/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run1/evaluate_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run1/evaluate_max_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run1/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run1/evaluate_component_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run1/evaluate_component_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run2/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run2/evaluate_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run2/evaluate_max_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run2/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run2/evaluate_component_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run2/evaluate_component_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run3/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run3/evaluate_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run3/evaluate_max_costs.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run3/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run3/evaluate_component_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahCombinedMaxCost/combined_max_wrapped90_jointp99_v1/run3/evaluate_component_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run1/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run1/evaluate_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run1/evaluate_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run1/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run2/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run2/evaluate_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run2/evaluate_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run2/training_metadata.json,ok,
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run3/evaluate_rewards.npy,ok,"shape=(20,)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run3/evaluate_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run3/evaluate_max_costs.npy,ok,"shape=(20, 2)"
+/home/bannanakid/RCRL_on_RCMDP/data_train/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run3/training_metadata.json,ok,

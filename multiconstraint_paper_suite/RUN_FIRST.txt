@@ -1,0 +1,5 @@
+cd /home/bannanakid/RCRL_on_RCMDP
+unzip -o multiconstraint_paper_suite.zip -d .
+chmod +x multiconstraint_paper_suite/evaluation/scripts/*.sh
+bash multiconstraint_paper_suite/evaluation/scripts/00_preflight.sh .
+bash multiconstraint_paper_suite/evaluation/scripts/01_priority_ablation.sh .

@@ -1,0 +1,7 @@
+seed,flip_onset_step,detected_with_required_warning,first_cross_step,warning_lead_steps,warning_lead_seconds,split
+5,133,True,30,103,5.15,calibration
+6,68,True,34,34,1.7000000000000002,calibration
+7,152,True,14,138,6.9,calibration
+1005,99,True,29,70,3.5,validation
+1006,312,True,15,297,14.850000000000001,validation
+1009,109,True,104,5,0.25,validation

@@ -1,0 +1,97 @@
+training_seed,method_a,method_b,test_type,metric,matched_resets,mean_difference_a_minus_b,difference_sd,ci95_low,ci95_high,a_safe_b_unsafe,a_unsafe_b_safe,exact_mcnemar_pvalue
+5,Shilpa action,Scalar combined,paired_reset_difference,reward,100,-3253.0325435274226,79.78992550711303,-3268.6713689268167,-3237.3937181280285,,,
+5,Shilpa action,Scalar combined,paired_reset_difference,pitch_abs_max_deg,100,-6.367453710409754,3.599559084897336,-7.072967291049633,-5.661940129769876,,,
+5,Shilpa action,Scalar combined,paired_reset_difference,pitch_max_utilization,100,-0.0707494856712195,0.03999510094330373,-0.07858852545610703,-0.06291044588633196,,,
+5,Shilpa action,Scalar combined,paired_reset_difference,joint_max_utilization,100,-0.45861654090430704,0.031803951947265874,-0.46485011548597116,-0.4523829663226429,,,
+5,Shilpa action,Scalar combined,paired_reset_difference,maximum_absolute_action,100,-0.4175096255540848,0.019519456629126023,-0.4213354390533935,-0.41368381205477606,,,
+5,Shilpa action,Scalar combined,matched_reset_mcnemar,action_feasible,100,0.85,,,,85.0,0.0,5.169878828456423e-26
+5,Shilpa action,Scalar combined,matched_reset_mcnemar,state_feasible,100,0.08999999999999997,,,,9.0,0.0,0.00390625
+5,Shilpa action,Scalar combined,matched_reset_mcnemar,all_constraints_feasible,100,0.85,,,,85.0,0.0,5.169878828456423e-26
+5,Shilpa action,Multi-constraint,paired_reset_difference,reward,100,-636.1325100260374,187.1954786419693,-672.8228238398633,-599.4421962122115,,,
+5,Shilpa action,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-32.139514109663935,33.3015176726271,-38.66661157349885,-25.612416645829022,,,
+5,Shilpa action,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.3571057123295994,0.37001686302918996,-0.42962901748332066,-0.2845824071758782,,,
+5,Shilpa action,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.38103013730972113,0.043008494829796386,-0.38945980229636123,-0.372600472323081,,,
+5,Shilpa action,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,-0.41719562470912935,0.01951679471356999,-0.42102091647298906,-0.41337033294526965,,,
+5,Shilpa action,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.85,,,,85.0,0.0,5.169878828456423e-26
+5,Shilpa action,Multi-constraint,matched_reset_mcnemar,state_feasible,100,0.050000000000000044,,,,5.0,0.0,0.0625
+5,Shilpa action,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.85,,,,85.0,0.0,5.169878828456423e-26
+5,Scalar combined,Multi-constraint,paired_reset_difference,reward,100,2616.9000335013857,214.25414292156006,2574.90622148876,2658.8938455140114,,,
+5,Scalar combined,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-25.77206039925418,33.694539357682295,-32.37619011335991,-19.16793068514845,,,
+5,Scalar combined,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.28635622665837984,0.3743837706409143,-0.35973544570399907,-0.21297700761276064,,,
+5,Scalar combined,Multi-constraint,paired_reset_difference,joint_max_utilization,100,0.07758640359458596,0.048498440791377155,0.06808070919947604,0.08709209798969589,,,
+5,Scalar combined,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,0.00031400084495544436,0.00013541288243624228,0.0002874599199979409,0.0003405417699129478,,,
+5,Scalar combined,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.0,,,,0.0,0.0,1.0
+5,Scalar combined,Multi-constraint,matched_reset_mcnemar,state_feasible,100,-0.039999999999999925,,,,4.0,8.0,0.3876953125
+5,Scalar combined,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.0,,,,0.0,0.0,1.0
+11,Shilpa action,Scalar combined,paired_reset_difference,reward,100,-1378.0889552482868,402.8107903871758,-1457.0398701641732,-1299.1380403324004,,,
+11,Shilpa action,Scalar combined,paired_reset_difference,pitch_abs_max_deg,100,-10.167741901903808,16.384037297508872,-13.379013212215547,-6.956470591592069,,,
+11,Shilpa action,Scalar combined,paired_reset_difference,pitch_max_utilization,100,-0.11297491002115341,0.18204485886120972,-0.1486557023579505,-0.0772941176843563,,,
+11,Shilpa action,Scalar combined,paired_reset_difference,joint_max_utilization,100,-0.26044366812866343,0.08000355187542392,-0.27612436429624654,-0.24476297196108035,,,
+11,Shilpa action,Scalar combined,paired_reset_difference,maximum_absolute_action,100,-0.4014821422100067,0.01095493433838759,-0.4036293093403307,-0.39933497507968274,,,
+11,Shilpa action,Scalar combined,matched_reset_mcnemar,action_feasible,100,0.69,,,,69.0,0.0,3.3881317890172014e-21
+11,Shilpa action,Scalar combined,matched_reset_mcnemar,state_feasible,100,0.06000000000000005,,,,6.0,0.0,0.03125
+11,Shilpa action,Scalar combined,matched_reset_mcnemar,all_constraints_feasible,100,0.69,,,,69.0,0.0,3.3881317890172014e-21
+11,Shilpa action,Multi-constraint,paired_reset_difference,reward,100,1498.5224102440902,168.52046376403584,1465.4923993463392,1531.5524211418413,,,
+11,Shilpa action,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-10.444063962631668,4.053616023067592,-11.238572703152917,-9.64955522211042,,,
+11,Shilpa action,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.1160451551403519,0.04504017803408436,-0.12487303003503243,-0.10721728024567136,,,
+11,Shilpa action,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.3370092845405692,0.08365736511755767,-0.3534061281036105,-0.32061244097752795,,,
+11,Shilpa action,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,-0.4014983880519867,0.01095496756148291,-0.4036455616940373,-0.39935121440993604,,,
+11,Shilpa action,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.69,,,,69.0,0.0,3.3881317890172014e-21
+11,Shilpa action,Multi-constraint,matched_reset_mcnemar,state_feasible,100,0.39,,,,39.0,0.0,3.637978807091713e-12
+11,Shilpa action,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.69,,,,69.0,0.0,3.3881317890172014e-21
+11,Scalar combined,Multi-constraint,paired_reset_difference,reward,100,2876.611365492377,443.6142201345157,2789.662978346012,2963.559752638742,,,
+11,Scalar combined,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-0.276322060727864,17.23422136685463,-3.6542294486313716,3.1015853271756435,,,
+11,Scalar combined,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.0030702451191984897,0.19149134852060698,-0.04060254942923746,0.03446205919084048,,,
+11,Scalar combined,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.07656561641190575,0.06812994118444665,-0.0899190848840573,-0.0632121479397542,,,
+11,Scalar combined,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,-1.624584197998047e-05,3.85303431691188e-05,-2.3797789241127753e-05,-8.693894718833184e-06,,,
+11,Scalar combined,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.0,,,,0.0,0.0,1.0
+11,Scalar combined,Multi-constraint,matched_reset_mcnemar,state_feasible,100,0.32999999999999996,,,,36.0,3.0,3.608874976634979e-08
+11,Scalar combined,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.0,,,,0.0,0.0,1.0
+17,Shilpa action,Scalar combined,paired_reset_difference,reward,100,1698.158050633752,378.02689876438603,1624.0647784759324,1772.2513227915717,,,
+17,Shilpa action,Scalar combined,paired_reset_difference,pitch_abs_max_deg,100,-23.73811508892867,39.9673549508697,-31.571716659299128,-15.90451351855821,,,
+17,Shilpa action,Scalar combined,paired_reset_difference,pitch_max_utilization,100,-0.2637568343214296,0.4440817216763301,-0.3507968517699903,-0.17671681687286891,,,
+17,Shilpa action,Scalar combined,paired_reset_difference,joint_max_utilization,100,-0.3245254886001869,0.060602044971194424,-0.33640348941454096,-0.3126474877858328,,,
+17,Shilpa action,Scalar combined,paired_reset_difference,maximum_absolute_action,100,-0.4478182578086853,0.026210529434692816,-0.4529555215778851,-0.44268099403948546,,,
+17,Shilpa action,Scalar combined,matched_reset_mcnemar,action_feasible,100,0.97,,,,97.0,0.0,1.262177448353619e-29
+17,Shilpa action,Scalar combined,matched_reset_mcnemar,state_feasible,100,0.050000000000000044,,,,6.0,1.0,0.125
+17,Shilpa action,Scalar combined,matched_reset_mcnemar,all_constraints_feasible,100,0.96,,,,96.0,0.0,2.524354896707238e-29
+17,Shilpa action,Multi-constraint,paired_reset_difference,reward,100,965.0895327894503,306.80441335514774,904.9558677718414,1025.2231978070593,,,
+17,Shilpa action,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-9.346439736659983,23.798710884539947,-14.010987070029813,-4.681892403290153,,,
+17,Shilpa action,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.10384933040733317,0.26443012093933277,-0.1556776341114424,-0.05202102670322395,,,
+17,Shilpa action,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.32902394694913867,0.045131361589809134,-0.3378696938207413,-0.32017820007753606,,,
+17,Shilpa action,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,-0.4478211784362793,0.02621100058400503,-0.45295853455074425,-0.4426838223218143,,,
+17,Shilpa action,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.97,,,,97.0,0.0,1.262177448353619e-29
+17,Shilpa action,Multi-constraint,matched_reset_mcnemar,state_feasible,100,0.0,,,,1.0,1.0,1.0
+17,Shilpa action,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.96,,,,96.0,0.0,2.524354896707238e-29
+17,Scalar combined,Multi-constraint,paired_reset_difference,reward,100,-733.0685178443018,424.1692224853012,-816.2056854514209,-649.9313502371828,,,
+17,Scalar combined,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,14.391675352268681,39.82919785701888,6.58515257229298,22.198198132244382,,,
+17,Scalar combined,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,0.15990750391409647,0.4425466428557655,0.07316836191436643,0.2466466459138265,,,
+17,Scalar combined,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.004498458348951794,0.058979801022982795,-0.016058499349456423,0.007061582651552834,,,
+17,Scalar combined,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,-2.9206275939941406e-06,5.0169004148432164e-06,-3.903940075303411e-06,-1.93731511268487e-06,,,
+17,Scalar combined,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.0,,,,0.0,0.0,1.0
+17,Scalar combined,Multi-constraint,matched_reset_mcnemar,state_feasible,100,-0.050000000000000044,,,,1.0,6.0,0.125
+17,Scalar combined,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.0,,,,0.0,0.0,1.0
+23,Shilpa action,Scalar combined,paired_reset_difference,reward,100,-2418.9023400355873,248.8537635858263,-2467.6776776984093,-2370.127002372765,,,
+23,Shilpa action,Scalar combined,paired_reset_difference,pitch_abs_max_deg,100,-32.578411838871766,30.88812260927892,-38.632483870290436,-26.524339807453096,,,
+23,Shilpa action,Scalar combined,paired_reset_difference,pitch_max_utilization,100,-0.36198235376524196,0.34320136232532134,-0.42924982078100493,-0.294714886749479,,,
+23,Shilpa action,Scalar combined,paired_reset_difference,joint_max_utilization,100,-0.8741221427521311,0.07130295831252433,-0.8880975225813859,-0.8601467629228763,,,
+23,Shilpa action,Scalar combined,paired_reset_difference,maximum_absolute_action,100,-0.996079604338156,0.001558795783069074,-0.9963851283116375,-0.9957740803646745,,,
+23,Shilpa action,Scalar combined,matched_reset_mcnemar,action_feasible,100,1.0,,,,100.0,0.0,1.5777218104420236e-30
+23,Shilpa action,Scalar combined,matched_reset_mcnemar,state_feasible,100,0.14,,,,14.0,0.0,0.0001220703125
+23,Shilpa action,Scalar combined,matched_reset_mcnemar,all_constraints_feasible,100,1.0,,,,100.0,0.0,1.5777218104420236e-30
+23,Shilpa action,Multi-constraint,paired_reset_difference,reward,100,-2557.38428159231,803.6237269646643,-2714.894532077384,-2399.8740311072356,,,
+23,Shilpa action,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-54.85604033171432,57.775333335048124,-66.18000566538375,-43.53207499804489,,,
+23,Shilpa action,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.6095115592412703,0.6419481481672014,-0.7353333962820418,-0.4836897222004989,,,
+23,Shilpa action,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.8925004261218173,0.085637858049274,-0.909285446299475,-0.8757154059441596,,,
+23,Shilpa action,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,-0.996079604338156,0.001558795783069074,-0.9963851283116375,-0.9957740803646745,,,
+23,Shilpa action,Multi-constraint,matched_reset_mcnemar,action_feasible,100,1.0,,,,100.0,0.0,1.5777218104420236e-30
+23,Shilpa action,Multi-constraint,matched_reset_mcnemar,state_feasible,100,0.28,,,,28.0,0.0,7.450580596923828e-09
+23,Shilpa action,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,1.0,,,,100.0,0.0,1.5777218104420236e-30
+23,Scalar combined,Multi-constraint,paired_reset_difference,reward,100,-138.48194155672286,857.911792444312,-306.632652875808,29.668769762362274,,,
+23,Scalar combined,Multi-constraint,paired_reset_difference,pitch_abs_max_deg,100,-22.277628492842556,68.50666530915036,-35.704934893436025,-8.850322092249085,,,
+23,Scalar combined,Multi-constraint,paired_reset_difference,pitch_max_utilization,100,-0.2475292054760284,0.7611851701016707,-0.39672149881595586,-0.09833691213610093,,,
+23,Scalar combined,Multi-constraint,paired_reset_difference,joint_max_utilization,100,-0.018378283369686436,0.08190294842790335,-0.03443126126155549,-0.002325305477817379,,,
+23,Scalar combined,Multi-constraint,paired_reset_difference,maximum_absolute_action,100,0.0,0.0,0.0,0.0,,,
+23,Scalar combined,Multi-constraint,matched_reset_mcnemar,action_feasible,100,0.0,,,,0.0,0.0,1.0
+23,Scalar combined,Multi-constraint,matched_reset_mcnemar,state_feasible,100,0.14,,,,24.0,10.0,0.024306510109454393
+23,Scalar combined,Multi-constraint,matched_reset_mcnemar,all_constraints_feasible,100,0.0,,,,0.0,0.0,1.0

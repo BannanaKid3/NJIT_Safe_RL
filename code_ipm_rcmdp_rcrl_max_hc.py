@@ -10,6 +10,7 @@ from torch.distributions import Beta, Normal, Categorical
 from torch.distributions import Uniform
 import gymnasium as gym
 import argparse
+import json
 import pickle
 import math
 import random
@@ -27,6 +28,21 @@ import matplotlib.pyplot as plt  # Import for plotting
 from envs.cartpole import CartPoleCostEnv, CartPolePerturbedEnv
 from envs.pendulum_v1 import PendulumEnv, PendulumCostEnv, PendulumPerturbedEnv
 from envs.half_cheetah import HalfCheetahWithPos, HalfCheetahWithPosPerturbed
+from envs.half_cheetah_pitch_cost import HalfCheetahPitchCost, COST_VERSION as PITCH_COST_VERSION
+from envs.half_cheetah_jointspeed_cost import HalfCheetahJointSpeedCost
+from envs.half_cheetah_combined_max_cost import HalfCheetahCombinedMaxCost
+from configs.halfcheetah_safety_thresholds import (
+    PITCH_THRESHOLD,
+    PITCH_SCALE,
+    JOINT_SPEED_THRESHOLDS,
+    JOINT_SPEED_SCALES,
+    COST_VERSION as JOINT_SPEED_COST_VERSION,
+)
+from configs.halfcheetah_combined_safety import (
+    JOINT_NAMES,
+    PERSISTENT_EPS,
+    COMBINED_COST_VERSION,
+)
 
 
 DEFAULT_CAMERA_CONFIG = {
@@ -35,6 +51,38 @@ DEFAULT_CAMERA_CONFIG = {
     "lookat": np.array((0.0, 0.0, 1.15)),
     "elevation": -20.0,
 }
+
+
+CUSTOM_ENV_FACTORIES = {
+    "HalfCheetahPitchCost": HalfCheetahPitchCost,
+    "HalfCheetahJointSpeedCost": HalfCheetahJointSpeedCost,
+    "HalfCheetahCombinedMaxCost": HalfCheetahCombinedMaxCost,
+}
+
+CUSTOM_ENV_METADATA = {
+    "HalfCheetahPitchCost": {
+        "cost_version": PITCH_COST_VERSION,
+        "cost_type": "pitch",
+        "aggregation": "scalar",
+    },
+    "HalfCheetahJointSpeedCost": {
+        "cost_version": JOINT_SPEED_COST_VERSION,
+        "cost_type": "joint_speed",
+        "aggregation": "worst_normalized_joint_excess",
+    },
+    "HalfCheetahCombinedMaxCost": {
+        "cost_version": COMBINED_COST_VERSION,
+        "cost_type": "pitch_and_joint_speed",
+        "aggregation": "maximum_normalized_violation",
+    },
+}
+
+
+def reset_observation(env, seed=None):
+    result = env.reset(seed=seed) if seed is not None else env.reset()
+    while isinstance(result, tuple):
+        result = result[0]
+    return np.asarray(result, dtype=np.float32)
 
 
 # Trick 8: orthogonal initialization
@@ -351,6 +399,8 @@ class Robust_RCAC_NPG:
             self.env = PendulumPerturbedEnv()
         elif args.env == "HopperPerturbedEnv":
             self.env = HopperPerturbedEnv()
+        elif args.env in CUSTOM_ENV_FACTORIES:
+            self.env = CUSTOM_ENV_FACTORIES[args.env]()
         elif args.env == "HalfCheetahWithPos":
             self.env = HalfCheetahWithPos()
         elif args.env == "HalfCheetahWithPosPerturbed":
@@ -744,19 +794,36 @@ class Robust_RCAC_NPG:
         for target_param, param in zip(self.target_Ccritic.parameters(), self.Ccritic.parameters()):
             target_param.data.copy_(tau * param.data + (1.0 - tau) * target_param.data)
 
-def evaluate_policy(args, env, agent, state_norm=None, reward_scaling=None):
+def cost_components(args, cost, info):
+    values = np.full(2, np.nan, dtype=np.float64)
+    if args.env == "HalfCheetahPitchCost":
+        values[0] = float(info.get("pitch_cost", cost))
+    elif args.env == "HalfCheetahJointSpeedCost":
+        values[1] = float(info.get("joint_speed_cost", cost))
+    elif args.env == "HalfCheetahCombinedMaxCost":
+        values[0] = float(info["pitch_cost"])
+        values[1] = float(info["joint_speed_cost"])
+    return values
+
+
+def evaluate_policy(args, env, agent, state_norm=None, reward_scaling=None, return_details=False):
     times = 3
     evaluate_reward = 0
     evaluate_cost = 0
     evaluate_max_cost = float("-inf")
+    evaluate_component_cost = np.zeros(2, dtype=np.float64)
+    evaluate_component_max_cost = np.full(2, -np.inf, dtype=np.float64)
+    component_available = np.zeros(2, dtype=bool)
     for _ in range(times):
-        s = env.reset()[0][0]
+        s = reset_observation(env)
         if args.use_state_norm:
             s = state_norm(s, update=False)  # During the evaluating,update=False
         done = False
         episode_reward = 0
         episode_cost = 0
         max_cost = float("-inf")
+        episode_component_cost = np.zeros(2, dtype=np.float64)
+        episode_component_max_cost = np.full(2, -np.inf, dtype=np.float64)
         while not done:
             a = agent.evaluate(
                 s
@@ -773,6 +840,13 @@ def evaluate_policy(args, env, agent, state_norm=None, reward_scaling=None):
             episode_reward += r
             episode_cost += c
             max_cost = max(max_cost, c)
+            components = cost_components(args, c, info)
+            available = np.isfinite(components)
+            component_available |= available
+            episode_component_cost[available] += components[available]
+            episode_component_max_cost[available] = np.maximum(
+                episode_component_max_cost[available], components[available]
+            )
 
             # if args.use_reward_norm:
             #     r = reward_norm(r, update=False)
@@ -787,7 +861,26 @@ def evaluate_policy(args, env, agent, state_norm=None, reward_scaling=None):
         evaluate_reward += episode_reward
         evaluate_cost += episode_cost
         evaluate_max_cost = max(evaluate_max_cost, max_cost)
+        evaluate_component_cost[component_available] += episode_component_cost[component_available]
+        evaluate_component_max_cost[component_available] = np.maximum(
+            evaluate_component_max_cost[component_available],
+            episode_component_max_cost[component_available],
+        )
 
+    if return_details:
+        evaluate_component_cost = evaluate_component_cost / times
+        evaluate_component_cost[~component_available] = np.nan
+        evaluate_component_max_cost[~component_available] = np.nan
+        return (
+            evaluate_reward / times,
+            evaluate_cost / times,
+            evaluate_max_cost,
+            {
+                "component_costs": evaluate_component_cost,
+                "component_max_costs": evaluate_component_max_cost,
+                "component_names": ("pitch", "joint_speed"),
+            },
+        )
     return evaluate_reward / times, evaluate_cost / times, evaluate_max_cost
 
 
@@ -918,9 +1011,12 @@ def main(args, run_number):
     seed, GAMMA = args.seed, args.GAMMA
 
     # Create directories for the current run
-    model_dir = f"./models/{args.env}/run{run_number}/"
-    data_train_dir = f"./data_train/{args.env}/run{run_number}/"
-    plot_data_dir = f"./plot_data/{args.env}/run{run_number}/"
+    env_metadata = CUSTOM_ENV_METADATA.get(args.env, {})
+    cost_version = env_metadata.get("cost_version", "legacy")
+    output_name = f"{args.env}/{cost_version}" if args.env in CUSTOM_ENV_FACTORIES else args.env
+    model_dir = f"./models/{output_name}/run{run_number}/"
+    data_train_dir = f"./data_train/{output_name}/run{run_number}/"
+    plot_data_dir = f"./plot_data/{output_name}/run{run_number}/"
     os.makedirs(model_dir, exist_ok=True)
     os.makedirs(data_train_dir, exist_ok=True)
     os.makedirs(plot_data_dir, exist_ok=True)
@@ -980,6 +1076,10 @@ def main(args, run_number):
             PendulumPerturbedEnv()
         )  # CartPolePerturbedEnv() # CartPoleCostEnv()#gym.make(args.env)  # When evaluating the policy, we need to rebuild an environment
         env_reset = PendulumPerturbedEnv()
+    elif args.env in CUSTOM_ENV_FACTORIES:
+        env = CUSTOM_ENV_FACTORIES[args.env]()
+        env_evaluate = CUSTOM_ENV_FACTORIES[args.env]()
+        env_reset = CUSTOM_ENV_FACTORIES[args.env]()
     elif args.env == "HalfCheetahWithPos":
         env = (
             HalfCheetahWithPos()
@@ -1002,13 +1102,13 @@ def main(args, run_number):
     # Set random seed
     # env.reset(seed=seed)
     # env.seed(seed)
-    env.reset(seed=seed)
+    reset_observation(env, seed=seed)
     env.action_space.seed(seed)
 
-    env_evaluate.reset(seed=seed)
+    reset_observation(env_evaluate, seed=seed)
     env_evaluate.action_space.seed(seed)
 
-    env_reset.reset(seed=seed)
+    reset_observation(env_reset, seed=seed)
     env_reset.action_space.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -1020,6 +1120,45 @@ def main(args, run_number):
     args.action_dim = env.action_space.shape[0]
     args.max_action = float(env.action_space.high[0])
     args.max_episode_steps = env.max_steps  # Must match environment's truncation limit
+    if args.env in CUSTOM_ENV_FACTORIES and args.uncer_set == "DS":
+        raise ValueError("The custom HalfCheetah cost environments support IPM training only")
+    run_metadata = {
+        "environment": args.env,
+        "cost_version": cost_version,
+        "cost_type": env_metadata.get("cost_type", "legacy"),
+        "aggregation": env_metadata.get("aggregation", "legacy"),
+        "run": int(run_number),
+        "training_seed": int(seed),
+        "training_episodes": int(args.max_train_steps),
+        "evaluate_frequency": int(args.evaluate_freq),
+        "persistent_epsilon": float(args.persistent_eps),
+        "pitch_threshold": float(PITCH_THRESHOLD),
+        "pitch_scale": float(PITCH_SCALE),
+        "joint_names": list(JOINT_NAMES),
+        "joint_speed_thresholds": np.asarray(JOINT_SPEED_THRESHOLDS, dtype=np.float64).tolist(),
+        "joint_speed_scales": np.asarray(JOINT_SPEED_SCALES, dtype=np.float64).tolist(),
+        "state_dimension": int(args.state_dim),
+        "action_dimension": int(args.action_dim),
+        "cost_dimension": 1,
+        "beta": float(args.beta),
+        "K_epochs": int(args.K_epochs),
+        "warm_start_episode": int(args.warm_start_episode),
+        "batch_size": int(args.batch_size),
+        "mini_batch_size": int(args.mini_batch_size),
+        "hidden_width": int(args.hidden_width),
+        "lr_actor": float(args.lr_a),
+        "lr_reward_critic": float(args.lr_c),
+        "lr_cost_critic": float(args.lr_cost),
+        "gamma": float(args.gamma),
+        "gae_lambda": float(args.lamda),
+        "ppo_epsilon": float(args.epsilon),
+        "entropy_coefficient": float(args.entropy_coef),
+        "weight_regularization": float(args.weight_reg),
+        "lambda": int(args.lambda_),
+        "policy_distribution": str(args.policy_dist),
+    }
+    with open(f"{data_train_dir}/training_metadata.json", "w", encoding="utf-8") as metadata_file:
+        json.dump(run_metadata, metadata_file, indent=2)
     lambda_ = args.lambda_
     b = args.baseline
     print("env={}".format(args.env))
@@ -1031,6 +1170,8 @@ def main(args, run_number):
     evaluate_num = 0  # Record the number of evaluations
     evaluate_rewards = []  # Record the rewards during the evaluating
     evaluate_costs = []  # Record the costs during the evaluating
+    evaluate_component_costs = []
+    evaluate_component_max_costs = []
     total_steps = 0  # Record the total steps during the training
     max_value = -np.inf
     evaluate_max_costs = []
@@ -1040,7 +1181,7 @@ def main(args, run_number):
 
     # Build a tensorboard
     writer = SummaryWriter(
-        log_dir=f"runs/RNAC/env_{args.env}_{args.policy_dist}_run{run_number}_seed_{seed}_GAMMA_{GAMMA}"
+        log_dir=f"runs/RNAC/env_{args.env}_{cost_version}_{args.policy_dist}_run{run_number}_seed_{seed}_GAMMA_{GAMMA}"
     )
 
     state_norm = Normalization(shape=args.state_dim)  # Trick 2:state normalization
@@ -1066,7 +1207,7 @@ def main(args, run_number):
         #    agent.gamma = 0.999
         # if total_steps > args.warm_start_episode:
         #             agent.entropy_coef = 0.0
-        s = env.reset()[0][0]
+        s = reset_observation(env)
         # print ("Initial state:", s)  # Debugging: Print the initial state
         # s_org = copy.deepcopy(s)
         if args.use_state_norm:
@@ -1192,17 +1333,20 @@ def main(args, run_number):
                 reward_scaling = None
             if not args.use_state_norm:
                 state_norm = None
-            evaluate_reward, evaluate_cost, evaluate_max_cost = evaluate_policy(
+            evaluate_reward, evaluate_cost, evaluate_max_cost, evaluate_details = evaluate_policy(
                 args,
                 env_evaluate,
                 agent,
                 state_norm=state_norm,
                 reward_scaling=reward_scaling,
+                return_details=True,
             )
             # evaluate_cost = evaluate_cost_function(args, env_evaluate, agent, state_norm)
             evaluate_rewards.append(evaluate_reward)
             evaluate_costs.append(evaluate_cost)
             evaluate_max_costs.append(evaluate_max_cost)
+            evaluate_component_costs.append(evaluate_details["component_costs"])
+            evaluate_component_max_costs.append(evaluate_details["component_max_costs"])
 
             print(
                 "evaluate_num:{} \t evaluate_reward:{} \t evaluate_cost:{} \t evaluate_max_cost:{}".format(
@@ -1236,8 +1380,16 @@ def main(args, run_number):
                 np.array(evaluate_costs),
             )
             np.save(
-                f"{data_train_dir}/RNAC_{args.policy_dist}_env_{args.env}_seed_{seed}_GAMMA_{GAMMA}_costs.npy",
-                np.array(evaluate_max_cost),
+                f"{data_train_dir}/RNAC_{args.policy_dist}_env_{args.env}_seed_{seed}_GAMMA_{GAMMA}_max_costs.npy",
+                np.array(evaluate_max_costs),
+            )
+            np.save(
+                f"{data_train_dir}/evaluate_component_costs.npy",
+                np.asarray(evaluate_component_costs, dtype=np.float64),
+            )
+            np.save(
+                f"{data_train_dir}/evaluate_component_max_costs.npy",
+                np.asarray(evaluate_component_max_costs, dtype=np.float64),
             )
 
             # Check if the current model satisfies the conditions for being the best
@@ -1270,6 +1422,7 @@ def main(args, run_number):
         episode_costs.append(total_cost)
         episode_max_costs.append(max_cost)  # Save data for plotting
         np.save(f"{plot_data_dir}/episode_rewards.npy", episode_rewards)
+        np.save(f"{plot_data_dir}/episode_costs.npy", episode_costs)
         np.save(f"{plot_data_dir}/episode_max_costs.npy", episode_max_costs)
         plot_metrics(
             episode_rewards,
@@ -1283,6 +1436,20 @@ def main(args, run_number):
     np.save(f"{data_train_dir}/evaluate_rewards.npy", evaluate_rewards)
     np.save(f"{data_train_dir}/evaluate_costs.npy", evaluate_costs)
     np.save(f"{data_train_dir}/evaluate_max_costs.npy", evaluate_max_costs)
+    np.save(f"{data_train_dir}/evaluate_component_costs.npy", evaluate_component_costs)
+    np.save(f"{data_train_dir}/evaluate_component_max_costs.npy", evaluate_component_max_costs)
+    if args.use_reward_scaling and args.use_state_norm:
+        save_agent(agent, f"{model_dir}/Final_RCAC", state_norm, reward_scaling)
+    elif args.use_reward_scaling:
+        save_agent(agent, f"{model_dir}/Final_RCAC", state_norm=None, reward_scaling=reward_scaling)
+    elif args.use_state_norm:
+        save_agent(agent, f"{model_dir}/Final_RCAC", state_norm)
+    else:
+        save_agent(agent, f"{model_dir}/Final_RCAC")
+    writer.close()
+    env.close()
+    env_evaluate.close()
+    env_reset.close()
 
 
 if __name__ == "__main__":
@@ -1291,8 +1458,20 @@ if __name__ == "__main__":
         "--env",
         type=str,
         # default="CartPolePerturbedEnv",
-        default="HalfCheetahWithPos",
-        help="HopperPerturbed/CartPolePerturbedEnv/CartPoleCostEnv/PendulumEnv/PendulumCostEnv/HalfCheetahWithPos/HalfCheetahWithPosPerturbed",
+        default="HalfCheetahPitchCost",
+        choices=[
+            "HalfCheetahPitchCost",
+            "HalfCheetahJointSpeedCost",
+            "HalfCheetahCombinedMaxCost",
+            "HalfCheetahWithPos",
+            "HalfCheetahWithPosPerturbed",
+            "CartPolePerturbedEnv",
+            "CartPoleCostEnv",
+            "PendulumEnv",
+            "PendulumCostEnv",
+            "PendulumPerturbedEnv",
+        ],
+        help="Training environment",
     )
     parser.add_argument("--uncer_set", type=str, default="IPM", help="DS/IPM")
     parser.add_argument(
@@ -1307,7 +1486,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max_train_steps",
         type=int,
-        default=int(16e3),
+        default=int(2e3),
         help="Maximum number of training steps",
     )
     parser.add_argument(
@@ -1413,12 +1592,12 @@ if __name__ == "__main__":
         default=0.001,
         help="Regularization for weight of critic",
     )
-    parser.add_argument("--seed", type=int, default=2, help="seed 2, 5, 7, 11, 17")
+    parser.add_argument("--seed", type=int, default=5, help="seed 2, 5, 7, 11, 17")
     parser.add_argument("--GAMMA", type=str, default="0", help="file name")
     parser.add_argument("--baseline", type=int, default=9, help="baseline")
     parser.add_argument("--lambda_", type=int, default=50, help="lambda")
     parser.add_argument("--beta", type=float, default=3e4, help="beta 600")
-    parser.add_argument("--run", type=int, default=5, help="run_number")
+    parser.add_argument("--run", type=int, default=1, help="run_number")
     parser.add_argument(
         "--warm_start_flag", type=int, default=0, help="warm_start_flag"
     )

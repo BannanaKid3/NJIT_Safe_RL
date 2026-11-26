@@ -1,0 +1,3 @@
+method,training_seeds,reward_mean_across_seeds,reward_sd_across_seeds,max_cost_mean_across_seeds,max_cost_sd_across_seeds,feasible_fraction_across_seeds
+Ours,2,62.74761163399958,12.168160793902668,2.143e-05,2.143e-05,1.0
+Surrogate Obj,2,69.64294787698744,12.464906301598717,0.09119717499999998,0.08963782499999998,1.0

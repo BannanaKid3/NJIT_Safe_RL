@@ -1,1 +1,21 @@
 *.log
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# VS Code caches
+.vscode/browse.vc.db*
+.vscode/ipch/
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Nested VS Code caches
+**/.vscode/browse.vc.db*
+**/.vscode/ipch/

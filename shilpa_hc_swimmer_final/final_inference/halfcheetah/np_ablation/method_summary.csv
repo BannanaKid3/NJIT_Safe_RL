@@ -1,0 +1,3 @@
+method,training_seeds,reward_mean_across_seeds,reward_sd_across_seeds,max_cost_mean_across_seeds,max_cost_sd_across_seeds,feasible_fraction_across_seeds
+Multi Constraint,6,2011.3621185500199,548.267512525049,0.07141061227977892,0.06695230347571016,0.8783333333333334
+Combined Cost,6,3179.2248670348,1201.5573017738834,0.07665326481244122,0.03388077445033802,0.8566666666666668

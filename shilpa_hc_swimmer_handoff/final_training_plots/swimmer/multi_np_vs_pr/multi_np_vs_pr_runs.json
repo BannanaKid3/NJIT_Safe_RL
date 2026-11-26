@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Multi Constraint (P+R)",
+    "path": "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMultiPerturbedRobust/run11812",
+    "episodes": 10000,
+    "max_cost_shape": [
+      10000,
+      2
+    ]
+  },
+  {
+    "label": "Multi Constraint (P+R)",
+    "path": "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMultiPerturbedRobust/run11815",
+    "episodes": 10000,
+    "max_cost_shape": [
+      10000,
+      2
+    ]
+  },
+  {
+    "label": "Multi Constraint (NP)",
+    "path": "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMulti/run11612",
+    "episodes": 10000,
+    "max_cost_shape": [
+      10000,
+      2
+    ]
+  },
+  {
+    "label": "Multi Constraint (NP)",
+    "path": "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMulti/run11615",
+    "episodes": 10000,
+    "max_cost_shape": [
+      10000,
+      2
+    ]
+  }
+]

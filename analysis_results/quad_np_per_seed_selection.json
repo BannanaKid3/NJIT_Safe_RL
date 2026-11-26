@@ -1,0 +1,54 @@
+{
+  "Multi_seed2": {
+    "seed": 2,
+    "kind": "multi",
+    "num_evaluations": 100,
+    "selected_index_zero_based": 11,
+    "selected_training_episode": 1100,
+    "reward": 59.25544397859961,
+    "worst_max_cost": 0.0,
+    "feasible": true,
+    "checkpoint": "models/Quadrotor/run9212/Best_RCAC_actor_1100",
+    "checkpoint_exists": true,
+    "selection_reason": "highest reward among feasible checkpoints"
+  },
+  "Combined_seed2": {
+    "seed": 2,
+    "kind": "combined",
+    "num_evaluations": 100,
+    "selected_index_zero_based": 45,
+    "selected_training_episode": 4500,
+    "reward": 95.97948367965107,
+    "worst_max_cost": 0.0,
+    "feasible": true,
+    "checkpoint": "models/QuadrotorCombined/run9312/Best_RCAC_actor",
+    "checkpoint_exists": true,
+    "selection_reason": "highest reward among feasible checkpoints"
+  },
+  "Multi_seed5": {
+    "seed": 5,
+    "kind": "multi",
+    "num_evaluations": 100,
+    "selected_index_zero_based": 77,
+    "selected_training_episode": 7700,
+    "reward": 85.48444676047137,
+    "worst_max_cost": 0.18083499372005463,
+    "feasible": true,
+    "checkpoint": "models/Quadrotor/run9215/Best_RCAC_actor_7700",
+    "checkpoint_exists": true,
+    "selection_reason": "highest reward among feasible checkpoints"
+  },
+  "Combined_seed5": {
+    "seed": 5,
+    "kind": "combined",
+    "num_evaluations": 100,
+    "selected_index_zero_based": 37,
+    "selected_training_episode": 3700,
+    "reward": 83.26925004485905,
+    "worst_max_cost": 0.0,
+    "feasible": true,
+    "checkpoint": "models/QuadrotorCombined/run9315/Best_RCAC_actor",
+    "checkpoint_exists": true,
+    "selection_reason": "highest reward among feasible checkpoints"
+  }
+}

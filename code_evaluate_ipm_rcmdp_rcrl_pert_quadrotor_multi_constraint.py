@@ -1,6 +1,6 @@
 import torch
 import numpy as np
-from code_ipm_rcmdp_rcrl_max_quadrotor_multi_constraint import (
+from code_ipm_rcmdp_rcrl_max_hc_multi_constraint import (
     Actor_Beta,
     Actor_Gaussian,
     Actor_Discrete,

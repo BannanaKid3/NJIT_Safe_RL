@@ -1,0 +1,6 @@
+check,value,tolerance,result
+KS statistic,0.26954000000000006,0.1,REVIEW
+Normalized Wasserstein distance,1.4955377124053215,0.2,REVIEW
+P99 relative difference,9.144232416915864e-05,0.1,PASS
+Timestep violation-rate difference,0.047619999999999996,0.01,REVIEW
+Episode mean violation-rate difference,0.04762000000000001,0.02,REVIEW

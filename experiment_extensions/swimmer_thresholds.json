@@ -1,0 +1,24 @@
+{
+  "status": "CALIBRATED",
+  "action_threshold": 0.5,
+  "action_scale": 1.0,
+  "joint_speed_threshold": 3.872087520618133,
+  "joint_speed_scale": 3.872087520618133,
+  "calibration": {
+    "method": "nominal deterministic policy rollout",
+    "threshold_quantile": 0.99,
+    "scale_definition": "joint_speed_scale = joint_speed_threshold; normalized positive excess / threshold",
+    "episodes": 30,
+    "samples": 30000,
+    "seed_start": 2027,
+    "checkpoint_prefix": "/home/bannanakid/RCRL_on_RCMDP/models/SwimmerWithPos/run2/Best_RCAC",
+    "joint_speed_q50": 2.749203762875809,
+    "joint_speed_q95": 3.64342493055213,
+    "joint_speed_q995": 4.434887835737832,
+    "joint_speed_max": 5.171760230018053,
+    "action_peak_q95": 0.5686595290899277,
+    "action_peak_max": 0.6105329394340515,
+    "mean_episode_reward": 1089.977262945928,
+    "total_steps": 30000
+  }
+}

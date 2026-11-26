@@ -1,0 +1,31 @@
+{
+  "environment": "Swimmer",
+  "evaluation_sigma_viscosity": 1.0,
+  "episodes_per_training_seed": 100,
+  "evaluation_seed_start": 2301,
+  "evaluation_seed_end": 2400,
+  "actor_evaluation": "deterministic_mean_action",
+  "smoothing": "moving average window 20",
+  "methods": {
+    "Multi Constraint": [
+      {
+        "training_seed": 2,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/SwimmerMultiPerturbedRobust/run11812/Best_RCAC_actor_7900"
+      },
+      {
+        "training_seed": 5,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/SwimmerMultiPerturbedRobust/run11815/Best_RCAC_actor_8700"
+      }
+    ],
+    "Combined Cost": [
+      {
+        "training_seed": 2,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/SwimmerCombinedPerturbedRobust/run11912/Best_RCAC_actor"
+      },
+      {
+        "training_seed": 5,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/SwimmerCombinedPerturbedRobust/run11915/Best_RCAC_actor"
+      }
+    ]
+  }
+}

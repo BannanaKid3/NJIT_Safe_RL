@@ -1,0 +1,63 @@
+{
+  "quadrotor": {
+    "threshold": 0.5,
+    "cost_scale": 100.0,
+    "multi_np": [
+      {"namespace": "Quadrotor", "run": 9212, "seed": 2},
+      {"namespace": "Quadrotor", "run": 9215, "seed": 5}
+    ],
+    "combined_np": [
+      {"namespace": "QuadrotorCombined", "run": 9312, "seed": 2},
+      {"namespace": "QuadrotorCombined", "run": 9315, "seed": 5}
+    ],
+    "multi_pr": [
+      {"namespace": "QuadrotorMultiPerturbedRobust", "run": 9412, "seed": 2},
+      {"namespace": "QuadrotorMultiPerturbedRobust", "run": 9415, "seed": 5}
+    ],
+    "combined_pr": [
+      {"namespace": "QuadrotorCombinedPerturbedRobust", "run": 9512, "seed": 2},
+      {"namespace": "QuadrotorCombinedPerturbedRobust", "run": 9515, "seed": 5}
+    ],
+    "fallbacks": {
+      "combined_np": [201, 205],
+      "multi_pr": [301, 305],
+      "combined_pr": [401, 405]
+    }
+  },
+  "swimmer": {
+    "threshold": 0.1,
+    "multi_np": [
+      {"namespace": "SwimmerMulti", "run": 11612, "seed": 2},
+      {"namespace": "SwimmerMulti", "run": 11615, "seed": 5}
+    ],
+    "combined_np": [
+      {"namespace": "SwimmerCombined", "run": 11712, "seed": 2},
+      {"namespace": "SwimmerCombined", "run": 11715, "seed": 5}
+    ],
+    "multi_pr": [
+      {"namespace": "SwimmerMultiPerturbedRobust", "run": 11812, "seed": 2},
+      {"namespace": "SwimmerMultiPerturbedRobust", "run": 11815, "seed": 5}
+    ],
+    "combined_pr": [
+      {"namespace": "SwimmerCombinedPerturbedRobust", "run": 11912, "seed": 2},
+      {"namespace": "SwimmerCombinedPerturbedRobust", "run": 11915, "seed": 5}
+    ],
+    "train_sigma": 0.7,
+    "paper_eval_sigma": 1.0
+  },
+  "halfcheetah": {
+    "threshold": 0.1,
+    "paper_eval_sigma": 1.5,
+    "nominal_seed_by_run": {
+      "4": 5,
+      "5": 11,
+      "6": 17,
+      "7": 23
+    }
+  },
+  "evaluation": {
+    "episodes": 100,
+    "base_seed": 2301,
+    "inference_window": 20
+  }
+}

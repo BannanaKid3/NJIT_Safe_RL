@@ -1,0 +1,8 @@
+metric,threshold,units,source
+torso_pitch,0.05267630944197633,rad,calibration_p99
+back_thigh,0.06617405856959689,rad/s,calibration_p99
+back_shin,0.06290093004891405,rad/s,calibration_p99
+back_foot,0.10347832609226723,rad/s,calibration_p99
+front_thigh,0.13598206079522468,rad/s,calibration_p99
+front_shin,0.08870660584411805,rad/s,calibration_p99
+front_foot,0.1926039448209413,rad/s,calibration_p99

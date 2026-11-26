@@ -917,9 +917,7 @@ def evaluate_policy(args, env, agent, state_norm=None, reward_scaling=None):
             # s_, r, c, truncated, terminated, info = env.step(action)
             s_, r, done, info = env.step(action)
             # print("Rendering environment...")
-            env.render()
-
-            # c = np.max(info.get('constraint_values', 0.))
+            # env.render() disabled for headless training speed # c = np.max(info.get('constraint_values', 0.))
             # c= 0.0
             # c = args.omega1*max(0, info["constraint_values"][0]) + args.omega2*max(0, info["constraint_values"][1])  # Assuming info contains constraint values
             #shilpa multi constraint
@@ -1810,27 +1808,29 @@ def main(args, run_number):
         episode_rewards.append(total_reward)
         episode_costs.append(total_cost)
         episode_max_costs.append(max_cost)  # Save data for plotting
-        np.save(f"{plot_data_dir}/episode_rewards.npy", episode_rewards)
-        np.save(f"{plot_data_dir}/episode_max_costs.npy", episode_max_costs)
-        #shilpa multi constraints
-        # np.save(f"{plot_data_dir}/episode_costs.npy")
+        save_training_diagnostics = ((total_steps + 1) % 100 == 0) or (total_steps == args.max_train_steps - 1)
+        if save_training_diagnostics:
+            np.save(f"{plot_data_dir}/episode_rewards.npy", episode_rewards)
+            np.save(f"{plot_data_dir}/episode_max_costs.npy", episode_max_costs)
+            #shilpa multi constraints
+            # np.save(f"{plot_data_dir}/episode_costs.npy")
         
-        #shilpa multi constraints
-        # plot_metrics(
-        #     episode_rewards,
-        #     episode_costs,
-        #     episode_max_costs,
-        #     save=True,
-        #     filename=f"{plot_data_dir}/training_metrics.png",
-        # )
-        plot_metrics(
-            episode_rewards,
-            episode_costs,
-            episode_max_costs,
-            cost_dim=args.cost_dim,
-            save=True,
-            filename=f"{plot_data_dir}/training_metrics.png",
-        )
+            #shilpa multi constraints
+            # plot_metrics(
+            #     episode_rewards,
+            #     episode_costs,
+            #     episode_max_costs,
+            #     save=True,
+            #     filename=f"{plot_data_dir}/training_metrics.png",
+            # )
+            plot_metrics(
+                episode_rewards,
+                episode_costs,
+                episode_max_costs,
+                cost_dim=args.cost_dim,
+                save=True,
+                filename=f"{plot_data_dir}/training_metrics.png",
+            )
         
 
     # Save the evaluation rewards and costs for this run

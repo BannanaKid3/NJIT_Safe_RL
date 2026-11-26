@@ -1,0 +1,48 @@
+{
+  "environment": "HalfCheetah",
+  "evaluation_gravity_sigma": 1.5,
+  "episodes_per_training_seed": 100,
+  "evaluation_seed_start": 2301,
+  "evaluation_seed_end": 2400,
+  "actor_evaluation": "deterministic_mean_action",
+  "smoothing": "moving average window 20",
+  "training_gravity_sigma": 0.5,
+  "methods": {
+    "Ours": [
+      {
+        "training_seed": 5,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1_gravity_step_normal_sigma0p5_rho0p001/run1/Best_RCAC_actor_9400"
+      },
+      {
+        "training_seed": 11,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1_gravity_step_normal_sigma0p5_rho0p001/run6/Best_RCAC_actor_9700"
+      },
+      {
+        "training_seed": 17,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1_gravity_step_normal_sigma0p5_rho0p001/run3/Best_RCAC_actor_9200"
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1_gravity_step_normal_sigma0p5_rho0p001/run4/Best_RCAC_actor_6200"
+      }
+    ],
+    "Surrogate Obj": [
+      {
+        "training_seed": 5,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run4/Best_RCAC_actor_9400"
+      },
+      {
+        "training_seed": 11,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run5/Best_RCAC_actor_6900"
+      },
+      {
+        "training_seed": 17,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run6/Best_RCAC_actor_9900"
+      },
+      {
+        "training_seed": 23,
+        "checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahMultiConstraintCost/multi_constraint_pitch_joint_v1/run7/Best_RCAC_actor_3900"
+      }
+    ]
+  }
+}

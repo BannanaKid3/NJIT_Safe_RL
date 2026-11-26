@@ -1,0 +1,47 @@
+{
+  "quadrotor": {
+    "threshold": 0.5,
+    "m_np": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/Quadrotor/run9212",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/Quadrotor/run9215"
+    ],
+    "c_np": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/QuadrotorCombined/run9312",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/QuadrotorCombined/run9315"
+    ],
+    "m_pr": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/QuadrotorMultiPerturbedRobust/run9412",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/QuadrotorMultiPerturbedRobust/run9415"
+    ],
+    "c_pr": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/QuadrotorCombinedPerturbedRobust/run9512",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/QuadrotorCombinedPerturbedRobust/run9515"
+    ]
+  },
+  "halfcheetah": {
+    "threshold": 0.1,
+    "m_np": null,
+    "c_np": null,
+    "m_pr": null,
+    "c_pr": null
+  },
+  "swimmer": {
+    "threshold": 0.1,
+    "m_np": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMulti/run11612",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMulti/run11615"
+    ],
+    "c_np": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerCombined/run11712",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerCombined/run11715"
+    ],
+    "m_pr": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMultiPerturbedRobust/run11812",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerMultiPerturbedRobust/run11815"
+    ],
+    "c_pr": [
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerCombinedPerturbedRobust/run11912",
+      "/home/bannanakid/RCRL_on_RCMDP/plot_data/SwimmerCombinedPerturbedRobust/run11915"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+candidate_index,seed,inversion_step,inversion_direction
+0,83,45,frontflip_candidate
+1,69,151,frontflip_candidate
+2,32,329,frontflip_candidate
+3,23,939,frontflip_candidate
+4,41,91,backflip_candidate
+5,37,111,backflip_candidate
+6,104,177,backflip_candidate
+7,88,390,backflip_candidate
+8,87,458,backflip_candidate

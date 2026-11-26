@@ -1,0 +1,8 @@
+figure,description
+robustness_reward_mean_sd.png,Reward versus evaluation gravity sigma; line is across-seed mean and band is ±1 SD.
+robustness_state_feasibility_mean_sd.png,Pitch-plus-joint feasibility versus evaluation gravity sigma.
+robustness_combined_cost_mean_sd.png,Mean episode-maximum combined cost versus evaluation gravity sigma.
+robustness_individual_constraints_mean_sd.png,Pitch and joint feasibility shown separately.
+robustness_raw_physical_metrics_mean_sd.png,Raw maximum torso pitch and joint-speed threshold utilization.
+robustness_retention_mean_sd.png,Reward retention and feasibility loss relative to sigma zero.
+gravity_perturbation_validation.png,Observed per-episode gravity-noise standard deviation versus requested sigma.

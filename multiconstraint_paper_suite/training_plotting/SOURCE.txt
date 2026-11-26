@@ -1,0 +1,5 @@
+Mentor email, Sep 20 2026: focus first on ablation plots, Combined Cost vs Multi Constraint; additional multiconstraint baselines are being run separately.
+Mentor plan, Sep 17 2026: Quadrotor NP/P multiconstraint, Combined ablation, optional robust Combined, inference comparison; HalfCheetah and MuJoCo training/inference and combined-cost ablation.
+Google Doc: RP-CRL Discussions, including training, inference, Quadrotor multiconstraint and robustness sections.
+Paper reference: Robust Peak-cost Constrained Reinforcement Learning, figures 1, 2, 5, 6.
+Upstream plotting source checked at commit 5c33f334a4811b17b9e9aceb837e6931ee509182.

@@ -1,0 +1,7 @@
+seed,flip_onset_step,detection_window_start,detection_window_end,detected,alarm_step,warning_lead_steps,warning_lead_seconds,split
+5,133,103,128,True,117,16,0.8,calibration
+6,68,38,63,True,50,18,0.9,calibration
+7,152,122,147,True,133,19,0.9500000000000001,calibration
+1005,99,69,94,True,92,7,0.35000000000000003,validation
+1006,312,282,307,True,291,21,1.05,validation
+1009,109,79,104,True,98,11,0.55,validation

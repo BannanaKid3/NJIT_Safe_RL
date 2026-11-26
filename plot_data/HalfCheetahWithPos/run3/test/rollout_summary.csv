@@ -1,0 +1,12 @@
+,value
+steps,500.0
+starting_x,-0.0009257706780336928
+ending_x,-85.70590518812078
+x_displacement,-85.70497941744274
+total_reward,1659.3285963132955
+total_cost,18.565535128116608
+maximum_cost,0.07700669765472412
+mean_absolute_action,0.3986680944263935
+maximum_absolute_action,0.5770066976547241
+maximum_absolute_pitch,0.271369326000568
+maximum_joint_speed,13.880522069547778

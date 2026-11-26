@@ -1,0 +1,25 @@
+training_seed,comparison,method,reward_mean,safety_metric,safety_value,pareto_nondominated,dominated_by
+5,reward_vs_state_feasibility,Shilpa action,984.2235528043512,state_feasible_fraction,1.0,True,
+5,reward_vs_state_feasibility,Scalar combined,4237.256096331775,state_feasible_fraction,0.91,True,
+5,reward_vs_state_feasibility,Multi-constraint,1620.3560628303885,state_feasible_fraction,0.95,True,
+5,reward_vs_all_constraint_feasibility,Shilpa action,984.2235528043512,all_constraints_feasible_fraction,0.85,True,
+5,reward_vs_all_constraint_feasibility,Scalar combined,4237.256096331775,all_constraints_feasible_fraction,0.0,True,
+5,reward_vs_all_constraint_feasibility,Multi-constraint,1620.3560628303885,all_constraints_feasible_fraction,0.0,False,Scalar combined
+11,reward_vs_state_feasibility,Shilpa action,4024.943645541328,state_feasible_fraction,1.0,True,
+11,reward_vs_state_feasibility,Scalar combined,5403.032600789615,state_feasible_fraction,0.94,True,
+11,reward_vs_state_feasibility,Multi-constraint,2526.4212352972377,state_feasible_fraction,0.61,False,"Shilpa action, Scalar combined"
+11,reward_vs_all_constraint_feasibility,Shilpa action,4024.943645541328,all_constraints_feasible_fraction,0.69,True,
+11,reward_vs_all_constraint_feasibility,Scalar combined,5403.032600789615,all_constraints_feasible_fraction,0.0,True,
+11,reward_vs_all_constraint_feasibility,Multi-constraint,2526.4212352972377,all_constraints_feasible_fraction,0.0,False,"Shilpa action, Scalar combined"
+17,reward_vs_state_feasibility,Shilpa action,3543.0541127420147,state_feasible_fraction,0.99,True,
+17,reward_vs_state_feasibility,Scalar combined,1844.8960621082626,state_feasible_fraction,0.94,False,"Shilpa action, Multi-constraint"
+17,reward_vs_state_feasibility,Multi-constraint,2577.9645799525642,state_feasible_fraction,0.99,False,Shilpa action
+17,reward_vs_all_constraint_feasibility,Shilpa action,3543.0541127420147,all_constraints_feasible_fraction,0.96,True,
+17,reward_vs_all_constraint_feasibility,Scalar combined,1844.8960621082626,all_constraints_feasible_fraction,0.0,False,"Shilpa action, Multi-constraint"
+17,reward_vs_all_constraint_feasibility,Multi-constraint,2577.9645799525642,all_constraints_feasible_fraction,0.0,False,Shilpa action
+23,reward_vs_state_feasibility,Shilpa action,1.495620516288656,state_feasible_fraction,1.0,True,
+23,reward_vs_state_feasibility,Scalar combined,2420.3979605518757,state_feasible_fraction,0.86,True,
+23,reward_vs_state_feasibility,Multi-constraint,2558.8799021085983,state_feasible_fraction,0.72,True,
+23,reward_vs_all_constraint_feasibility,Shilpa action,1.495620516288656,all_constraints_feasible_fraction,1.0,True,
+23,reward_vs_all_constraint_feasibility,Scalar combined,2420.3979605518757,all_constraints_feasible_fraction,0.0,False,Multi-constraint
+23,reward_vs_all_constraint_feasibility,Multi-constraint,2558.8799021085983,all_constraints_feasible_fraction,0.0,True,

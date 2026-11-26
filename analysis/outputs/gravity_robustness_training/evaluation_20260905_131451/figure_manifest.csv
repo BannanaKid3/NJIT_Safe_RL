@@ -1,0 +1,5 @@
+figure,description
+training_reward_mean_sd.png,Smoothed mean reward across training seeds with ±1 SD shading.
+training_combined_max_cost_mean_sd.png,Smoothed mean episode-maximum combined cost with ±1 SD shading.
+training_feasibility_mean_sd.png,Smoothed percentage of feasible training episodes with ±1 SD shading.
+training_multi_components_mean_sd.png,Separate multi-policy pitch and joint maximum costs with ±1 SD shading.

@@ -1,0 +1,7 @@
+{
+  "status": "NOT_CALIBRATED",
+  "action_threshold": 0.5,
+  "action_scale": 1.0,
+  "joint_speed_threshold": null,
+  "joint_speed_scale": null
+}

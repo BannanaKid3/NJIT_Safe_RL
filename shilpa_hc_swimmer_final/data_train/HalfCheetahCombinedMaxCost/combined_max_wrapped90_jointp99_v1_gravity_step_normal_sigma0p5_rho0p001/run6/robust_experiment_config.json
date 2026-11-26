@@ -1,0 +1,20 @@
+{
+  "method": "scalar_combined",
+  "environment": "HalfCheetahCombinedMaxCost",
+  "experiment_version": "combined_max_wrapped90_jointp99_v1_gravity_step_normal_sigma0p5_rho0p001",
+  "run": 6,
+  "training_seed": 11,
+  "sigma_gravity": 0.5,
+  "gravity_distribution": "Normal(base_gravity_z, sigma_gravity)",
+  "gravity_resampled": "before_every_environment_step",
+  "gravity_affects": [
+    "next_state",
+    "reward",
+    "cost"
+  ],
+  "rho": 0.001,
+  "rho_implementation": "Alias for the repository's existing weight_reg coefficient on the critic final-layer norm term; the underlying RCAC/IPM update is unchanged.",
+  "training_episodes": 10000,
+  "checkpoint_evaluation_frequency": 100,
+  "costs_unchanged": true
+}

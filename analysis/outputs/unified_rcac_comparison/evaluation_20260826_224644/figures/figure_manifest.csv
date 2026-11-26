@@ -1,0 +1,12 @@
+figure,description
+reward_by_training_seed.png,Mean 100-episode reward and reset-level 95% confidence interval for each policy.
+feasibility_by_training_seed.png,"Every policy is evaluated under action, pitch, joint-speed, and combined feasibility definitions."
+pitch_episode_max_distributions.png,Episode-maximum raw pitch and normalized threshold utilization; training-seed means are overlaid.
+six_joint_speed_utilization_distributions.png,"Per-episode maximum speed divided by each joint's P99 threshold, with seed means overlaid."
+action_metrics_all_policies.png,Raw action distribution and Shilpa action-cost feasibility for all three policy families.
+reward_vs_common_safety_metrics.png,Each point is one trained seed; labels identify training seeds and higher/right is better.
+method_means_across_training_seeds.png,"Mean policy results across independent training seeds; intervals use training seeds, not evaluation episodes."
+matched_timeseries_training_seed_5.png,Raw pitch and six joint speeds for the same reset across all three methods.
+matched_timeseries_training_seed_11.png,Raw pitch and six joint speeds for the same reset across all three methods.
+matched_timeseries_training_seed_17.png,Raw pitch and six joint speeds for the same reset across all three methods.
+matched_timeseries_training_seed_23.png,Raw pitch and six joint speeds for the same reset across all three methods.

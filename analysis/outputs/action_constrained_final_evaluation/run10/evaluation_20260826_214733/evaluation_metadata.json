@@ -1,0 +1,53 @@
+{
+  "environment": "HalfCheetahWithPos",
+  "training_constraint": "action_torque_excess",
+  "action_torque_threshold": 0.5,
+  "training_persistent_epsilon": 0.1,
+  "actor_checkpoint": "/home/bannanakid/RCRL_on_RCMDP/models/HalfCheetahWithPos/run10/Best_RCAC_actor",
+  "state_normalizer": null,
+  "actor_activation": "relu",
+  "state_dimension": 18,
+  "hidden_width": 64,
+  "action_dimension": 6,
+  "evaluation_episodes": 100,
+  "evaluation_seed_start": 2301,
+  "evaluation_seed_end": 2400,
+  "deterministic_mean_action": true,
+  "plot_episode": 1,
+  "pitch_and_joint_costs_used_for_training": false,
+  "pitch_and_joint_costs_are_post_hoc_diagnostics": true,
+  "pitch_threshold": 1.5707963267948966,
+  "pitch_scale": 1.5707963267948966,
+  "joint_names": [
+    "back_thigh",
+    "back_shin",
+    "back_foot",
+    "front_thigh",
+    "front_shin",
+    "front_foot"
+  ],
+  "joint_speed_thresholds": [
+    23.952442696579617,
+    21.273920780514413,
+    20.869860859139493,
+    27.172519265909983,
+    21.158679170546527,
+    16.234366386891228
+  ],
+  "joint_speed_scales": [
+    23.952442696579617,
+    21.273920780514413,
+    20.869860859139493,
+    27.172519265909983,
+    21.158679170546527,
+    16.234366386891228
+  ],
+  "diagnostic_persistent_epsilon": 0.1,
+  "reward_mean": 984.2235528043512,
+  "reward_ci95_low": 983.6641691522408,
+  "reward_ci95_high": 984.7829364564617,
+  "action_constraint_feasible_fraction": 0.85,
+  "diagnostic_pitch_feasible_fraction": 1.0,
+  "diagnostic_joint_speed_feasible_fraction": 1.0,
+  "diagnostic_combined_feasible_fraction": 1.0
+}

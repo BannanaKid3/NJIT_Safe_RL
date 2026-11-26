@@ -1,0 +1,23 @@
+field,status,observed_values
+training_seed,match,"HalfCheetahCombinedMaxCost: 11, 17, 5; HalfCheetahMultiConstraintCost: 11, 17, 5"
+training_episodes,match,HalfCheetahCombinedMaxCost: 2000; HalfCheetahMultiConstraintCost: 2000
+evaluate_frequency,match,HalfCheetahCombinedMaxCost: 100; HalfCheetahMultiConstraintCost: 100
+persistent_epsilon,match,HalfCheetahCombinedMaxCost: 0.1; HalfCheetahMultiConstraintCost: 0.1
+state_dimension,match,HalfCheetahCombinedMaxCost: 18; HalfCheetahMultiConstraintCost: 18
+action_dimension,match,HalfCheetahCombinedMaxCost: 6; HalfCheetahMultiConstraintCost: 6
+beta,match,HalfCheetahCombinedMaxCost: 30000.0; HalfCheetahMultiConstraintCost: 30000.0
+K_epochs,match,HalfCheetahCombinedMaxCost: 5; HalfCheetahMultiConstraintCost: 5
+warm_start_episode,match,HalfCheetahCombinedMaxCost: 500; HalfCheetahMultiConstraintCost: 500
+batch_size,match,HalfCheetahCombinedMaxCost: 2048; HalfCheetahMultiConstraintCost: 2048
+mini_batch_size,match,HalfCheetahCombinedMaxCost: 128; HalfCheetahMultiConstraintCost: 128
+hidden_width,match,HalfCheetahCombinedMaxCost: 64; HalfCheetahMultiConstraintCost: 64
+lr_actor,match,HalfCheetahCombinedMaxCost: 0.001; HalfCheetahMultiConstraintCost: 0.001
+lr_reward_critic,match,HalfCheetahCombinedMaxCost: 0.005; HalfCheetahMultiConstraintCost: 0.005
+lr_cost_critic,match,HalfCheetahCombinedMaxCost: 0.001; HalfCheetahMultiConstraintCost: 0.001
+gamma,match,HalfCheetahCombinedMaxCost: 0.99; HalfCheetahMultiConstraintCost: 0.99
+gae_lambda,match,HalfCheetahCombinedMaxCost: 0.95; HalfCheetahMultiConstraintCost: 0.95
+ppo_epsilon,match,HalfCheetahCombinedMaxCost: 0.2; HalfCheetahMultiConstraintCost: 0.2
+entropy_coefficient,match,HalfCheetahCombinedMaxCost: 0.001; HalfCheetahMultiConstraintCost: 0.001
+weight_regularization,match,HalfCheetahCombinedMaxCost: 0.001; HalfCheetahMultiConstraintCost: 0.001
+lambda,match,HalfCheetahCombinedMaxCost: 50; HalfCheetahMultiConstraintCost: 50
+policy_distribution,match,HalfCheetahCombinedMaxCost: Gaussian; HalfCheetahMultiConstraintCost: Gaussian
